@@ -1,13 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-    background: #FCFCFC;
-    color: #131313;
+    background: $white-text-color;
+    color: $primary-text-color;
     font: 12px/1.62 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: #F8D24E;
+    color: $accent-color;
     text-decoration: none;
 
     &:hover {
@@ -27,11 +27,11 @@ a {
     margin: 0 auto;
     @media screen and (min-width: $tablet) {
         padding: 0 32px;
-        width: 768px;
+        max-width: 768px;
     }
     @media screen and (min-width: $desktop) {
         padding: 0 16px;
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 
