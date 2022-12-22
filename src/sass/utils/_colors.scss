@@ -1,0 +1,35 @@
+// primary-bg-color - основний колір фону
+// first-cards-color (second, third) - колір карточок і бордерів у секціі продукти (зелений, жовтий, персиковий)
+// third-cards-color - також колір текстів адрес в секціі контакти
+// accent-color - колір акцентів, кнопок, бордерів кнопок, підложки іконок соцмереж
+// decor-elements-color - колір декоративного елементу - кола в секціі продукти, колір круглих елементів в модальних вікнах about product, buy now
+// hover-color - колір ховеру кнопок та лінків
+// disabled-color - колір неактивних кнопок та лінків
+// primary-text-color - колір тексту та заголовків у секціях зі світлим фоном (це не повністю чорний)
+// white-text-color - колір тексту та заголовків у секціях з темним фоном (це не повністю білий), колір тексту при фокусі, колір іконок соцмереж при фокусі
+// gray-text-color - колір тексту в секціі контакти
+// copyright-color - колір копірайту в секціі футер
+
+$primary-bg-color: #84a178;
+
+$first-cards-color: #aec6a5;
+
+$second-cards-color: #efd478;
+
+$third-cards-color: #d6936d;
+
+$accent-color: #f8d24e;
+
+$decor-elements-color: #9cbe8f;
+
+$hover-color: #0a8817;
+
+$disabled-color: #ababab;
+
+$primary-text-color: #131313;
+
+$white-text-color: #fcfcfc;
+
+$gray-text-color: #ababab;
+
+$copyright-color: #7a7a7a;
