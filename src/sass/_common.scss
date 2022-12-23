@@ -6,6 +6,22 @@ body {
     font: 12px/1.62 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, dl, address, blockquote, figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 a {
     color: $accent-color;
     text-decoration: none;
@@ -15,10 +31,18 @@ a {
     }
 }
 
-.list-reset {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
     padding: 0;
-    margin: 0;
-    list-style: none;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -33,10 +57,4 @@ a {
         padding: 0 16px;
         max-width: 1200px;
     }
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
