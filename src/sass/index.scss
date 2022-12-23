@@ -1,2 +1,29 @@
-@import './common';
-@import './example';
+// BASE
+@import "./base/base";
+@import "./base/variables";
+
+// UTILS
+@import "./utils/mixin";
+@import "./utils/visually-hidden";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/products";
+@import "./layout/about";
+@import "./layout/advantages";
+@import "./layout/gallery";
+@import "./layout/customer-reviews";
+@import "./layout/contacts";
+@import "./layout/footer";
+
+// COMPONENTS
+@import "./components/button";
+@import "./components/buy-now-modal";
+@import "./components/franchise-modal";
+@import "./components/modal-wirh-info-about-product";
+@import "./components/our-locations-modal";
+@import "./components/read-more-modal";
+
+
+
