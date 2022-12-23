@@ -1,0 +1,97 @@
+.advantages {
+    padding-top: 0;
+    padding-bottom: 32px;
+
+    background-color: #84A178;
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__indi {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FCFCFC;
+}
+
+.advantages__indi::before {
+    margin-bottom: 16px;
+}
+
+.advantages__indi--cow::before {
+    content: "";
+
+    transform: translateX(4px);
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+    background-color: #f8d24e;
+
+    background-image: url(./advantages/cow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__indi--weight::before {
+    content: "";
+
+    transform: translateX(23px);
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+    background-color: #f8d24e;
+
+    background-image: url(./advantages/weight.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__indi--cream::before {
+    content: "";
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+    background-color: #f8d24e;
+
+    background-image: url(./advantages/ice-crema.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__text {
+    margin-top: 22px;
+    width: 230px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    color: #FCFCFC;
+}
