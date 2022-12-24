@@ -48,12 +48,12 @@ a {
     padding: 0 20px;
     margin: 0 auto;
 
-    @media screen and (min-width: $tablet) {
+    @include mq(tablet) {
         padding: 0 32px;
         max-width: 768px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
         padding: 0 16px;
         max-width: 1200px;
     }
