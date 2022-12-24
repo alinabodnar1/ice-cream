@@ -18,8 +18,11 @@ a {
     height: auto;
   }
   body {
-    font-family: "Montserrat";
+    font-family: $main-fon;
     color: $primary-text-color;
+  }
+  address {
+    font-style: normal;
   }
 //   CONTACTS
   
@@ -36,6 +39,8 @@ a {
     display: block;
     width: 280px;
     height: 412px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $focus-color;
     border-radius: 24px;
     padding: 42px 32px 22px 32px;
@@ -56,9 +61,9 @@ a {
   }
   
   .contact__wrapper {
-    padding-bottom: 24px;
+    padding-bottom: 23px;
     border-bottom: 1px solid $border-color;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
   
   .contact__branch {
@@ -69,7 +74,7 @@ a {
   
   .contact__location {
     display: block;
-    width: 180px;
+    width: 220px;
     line-height: 1.83;
     letter-spacing: 0.04em;
     color: $third-cards-color;
@@ -99,6 +104,8 @@ a {
   .contact__map {
     width: 196px;
     height: 42px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: inherit;
     font-weight: 600;
     font-size: 14px;
@@ -130,7 +137,9 @@ a {
   
     .contact__lists {
       display: flex;
+      justify-content: center;
       gap: 16px;
+      margin-bottom: 40px;
     //   transform: translateY(-299px);
     }
   
@@ -138,6 +147,9 @@ a {
       width: 224px;
       height: 537px;
       padding: 40px 24px 40px 24px;
+      margin: 0; 
+    }
+    .contact__items:not(:last-child) {
       margin-bottom: 0;
     }
   
@@ -148,12 +160,12 @@ a {
       margin-bottom: 36px;
     }
     .contact__location {
-      width: 150px;
+      width: 170px;
     }
   
     .contact__wrapper {
-      padding-bottom: 32px;
-      margin-bottom: 32px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
     }
   
     .contact__branch {
@@ -170,9 +182,11 @@ a {
     // CONTACTS BUTTONS
     .contact__buttons {
       display: flex;
+      justify-content: center;
     }
   
     .contact__map {
+      margin-left: 0;
       margin-right: 16px;
       margin-bottom: 0;
     }
@@ -186,6 +200,7 @@ a {
   
     .contact__lists {
       gap: 32px;
+      margin-bottom: 60px;
     //  transform: translateY(-128px);
     }
     .contact__items {
@@ -198,8 +213,12 @@ a {
       padding: 4px 14px;
     }
     .contact__location {
-      width: 250px;
+      width: 290px;
     }
+.contact__location:hover, .contact__location:focus, .contact__link:hover, .contact__link:focus {
+text-decoration: underline;
+}
+
   
     .contact__branch {
       margin-bottom: 8px;
