@@ -1,8 +1,7 @@
+//Брейкпоінти 
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
-
-$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // primary-bg-color - основний колір фону
 $primary-bg-color: #84a178;
@@ -32,7 +31,6 @@ $disabled-color: #ababab;
 // колір тексту та заголовків у секціях зі світлим фоном (це не повністю чорний)
 $primary-text-color: #131313;
 
-
 // колір тексту та заголовків у секціях з темним фоном (це не повністю білий), колір тексту при фокусі, колір іконок соцмереж при фокусі
 $white-text-color: #fcfcfc;
 
@@ -41,3 +39,18 @@ $gray-text-color: #ababab;
 
 // колір копірайту в секціі футер
 $copyright-color: #7a7a7a;
+
+// колір тексту при фокусі
+$focus-color: #FFFFFF;
+
+// колір бордеру в контактах
+$border-color: #e1e1e1;
+
+// основний фон
+$main-fon: 'Montserrat', sans-serif;
+
+// другорядний фон
+$secondary-fon: 'Seymour One', sans-serif;
+
+// кубік для анімацій
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
