@@ -1,0 +1,44 @@
+.gallery {
+    // position: relative;
+    width: 420px;
+    height: auto;
+    margin: 0 auto;
+    
+    // Для екранів 320px
+
+    // width: 280px;
+    // height: 130px;
+
+    @include mq(tablet){
+        width: 704px;
+        height: 327px;
+    }
+
+    @include mq(desktop){
+        width: 1013px;
+        height: 422px;
+    }
+
+&__item {
+  border-radius: 18px;
+  transform: translateY(-32px);
+  overflow: hidden;
+}
+  &__item:nth-child(2) {
+    display: none;
+
+    @include mq(desktop) {
+        display: block;
+      }
+  }
+
+
+&__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+}
+
