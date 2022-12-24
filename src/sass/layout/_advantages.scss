@@ -2,7 +2,7 @@
     padding-top: 0;
     padding-bottom: 32px;
 
-    background-color: #84A178;
+    background-color: $primary-bg-color;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 204px;
@@ -50,11 +50,11 @@
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #FCFCFC;
-}
+    color: $white-text-color;
 
-.advantages__indi::before {
-    margin-bottom: 16px;
+    &::before {
+        margin-bottom: 16px;
+    }
 }
 
 .advantages__indi--cow::before {
@@ -67,7 +67,7 @@
     height: 50px;
     border-radius: 50px;
 
-    background-color: #f8d24e;
+    background-color: $accent-color;
 
     background-image: url(/src/images/advantages/cow.png);
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@
     height: 50px;
     border-radius: 50px;
 
-    background-color: #f8d24e;
+    background-color: $accent-color;
 
     background-image: url(/src/images/advantages/weight.png);
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@
     height: 50px;
     border-radius: 50px;
 
-    background-color: #f8d24e;
+    background-color: $accent-color;
 
     background-image: url(/src/images/advantages/ice-crema.png);
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@
     font-size: 12px;
     line-height: 170%;
 
-    color: #FCFCFC;
+    color: $white-text-color;
 
     @media screen and (min-width: 768px) {
         width: 152px;
