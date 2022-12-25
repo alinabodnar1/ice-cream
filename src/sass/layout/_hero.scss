@@ -1,0 +1,208 @@
+.hero-header {
+    background-color: $primary-bg-color;
+}
+.hero-header__hero {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    position: relative;
+  
+    @include mq(phone) {
+      max-width: 480px;
+     }
+  
+    @include mq(tablet) {
+      max-width: 768px;
+     }
+    
+    @include mq(desktop) {
+      max-width: 1200px;
+     }
+  }
+  
+  .hero__container {
+    // position: relative;
+    padding-bottom: 236px;
+    
+  
+    @include mq(tablet) {
+      display: flex;
+      padding-bottom: 12px;
+    }
+  
+    @include mq(desktop) {
+      padding-bottom: 65px; 
+     }
+  }
+  
+  .hero__header {
+    max-width: 247px;
+    font-family: $secondary-fon;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    color: $white-text-color;
+  
+    span {
+      font-size: 33px;
+      @include mq(desktop) {
+        font-size: inherit;
+      }
+    }
+  
+    @include mq(desktop) {
+      font-size: 38px;
+      max-width: 367px;
+    }
+  }
+  
+  .hero__buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 32px;
+  
+    @include mq(tablet) {
+      margin-top: 24px;
+    }
+  
+    @include mq(desktop) {
+      margin-top: 28px;
+    }
+  }
+  
+  .hero__products-btn {
+    margin-right: 12px;
+    padding: 11px 26px;
+  
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration-line: none;
+    color: $primary-text-color;
+  
+    @include mq(desktop) {
+      margin-right: 38px;
+      padding: 12px 34px;
+      font-size: 14px;
+    }
+  }
+  
+  .hero__question-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-decoration-line: underline;
+    color: $accent-color;
+  }
+  
+  .invite__bowl-img {
+    @include mq(tablet) {
+      margin-right: 32px;
+    }
+  
+    @include mq(desktop) {
+      margin-right: 16px;
+    }
+  }
+  
+  .hero__invite {
+    display: none;
+    @include mq(tablet) {
+      display: flex;
+      margin-top: 12px;
+    }
+  
+    @include mq(desktop) {
+      margin-top: 42px;
+    }
+  }
+  
+  .invite__text {
+    line-height: 1.4;
+    color: $white-text-color;
+    @include mq(tablet) {
+      max-width: 140px;
+      font-size: 12px;
+    }
+    @include mq(desktop) {
+      max-width: 200px;
+      font-size: 14px;
+    }
+  }
+  .invite__arrow {
+    display: flex;
+    transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+    &:hover {
+        transform: translateX(5%)
+    }
+    @include mq(tablet) {
+      margin-top: 12px;
+      justify-content: left;
+      color: $white-text-color;
+      fill: $white-text-color;
+    }
+  
+    @include mq(desktop) {
+      margin-top: 24px;
+    }
+  }
+  
+  .hero__numbers {
+    margin-left: auto;
+  }
+  
+  .hero__number {
+    display: none;
+    @include mq(tablet) {
+      display: block;
+      margin-top: 14px;
+      font-size: 8px;
+      line-height: 1.21;
+      text-align: right;
+      color: $white-text-color;
+      span {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary-text-color;
+      }
+    }
+  
+      @include mq(desktop) {
+        margin-top: 8px;
+        font-size: 14px;
+        span {
+          font-size: 46px;
+        }
+      }
+  }
+  
+  .hero__cone-img {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  
+  @include mq(phone-only) {
+    left: 70%;
+  }
+  
+    @include mq(tablet) {
+    right: 92px;
+    }
+   }
+  
+  .hero__dots-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  
