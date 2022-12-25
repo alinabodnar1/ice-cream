@@ -1,46 +1,44 @@
 .advantages {
-    padding-top: 0;
-    padding-bottom: 64px;
+  padding-top: 0;
+  padding-bottom: 64px;
 
-    background-color: $primary-bg-color;
+  background-color: $primary-bg-color;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 204px;
+  @include mq('tablet') {
+    padding-bottom: 204px;
+  }
+
+  @include mq('desktop') {
+    padding-bottom: 178px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    @include mq('tablet') {
+      flex-direction: row;
+      justify-content: center;
+      gap: 80px;
     }
 
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 178px;
+    @include mq('desktop') {
+      gap: 125px;
     }
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 22px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-        @media screen and (min-width: 768px) {
-            flex-direction: row;
-            justify-content: center;
-            gap: 80px;
-        }
+  @include mq('tablet') {
+    flex-direction: row;
+  }
 
-        @media screen and (min-width: 1200px) {
-            gap: 125px;
-        }
-    }
-
-    &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-    }
-}
-
-
-.advantages__indi {
+  &__indi {
     font-family: $main-fon;
     font-weight: 700;
     font-size: 36px;
@@ -52,125 +50,127 @@
     color: $white-text-color;
 
     &::before {
-        margin-bottom: 16px;
+      margin-bottom: 16px;
 
-        @media screen and (min-width: 768px) {
-            margin-bottom: 32px;
-        }
+      @include mq('tablet') {
+        margin-bottom: 32px;
+      }
 
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 40px;
-        }
+      @include mq('desktop') {
+        margin-bottom: 40px;
+      }
     }
 
-    @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: calc(59 / 48);
+    @include mq('tablet') {
+      text-transform: lowercase;
+      font-size: 48px;
+      line-height: calc(59 / 48);
     }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 58px;
-        line-height: calc(71 / 58);
+    @include mq('desktop') {
+      font-size: 58px;
+      line-height: calc(71 / 58);
     }
+  }
 }
 
 .advantages__indi--cow::before {
-    content: "";
+  content: '';
 
-    transform: translateX(4px);
+  transform: translateX(4px);
 
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 
-    background-color: $accent-color;
+  background-color: $accent-color;
 
-    background-image: url(/src/images/advantages/cow.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/src/images/advantages/cow.png);
+  background-repeat: no-repeat;
+  background-position: center;
 
-    @media screen and (min-width: 768px) {
-        transform: translateX(16px);
-    }
+  @include mq('tablet') {
+    transform: translateX(16px);
+  }
 
-    @media screen and (min-width: 1200px) {
-        transform: translateX(25px);
-    }
+  @include mq('desktop') {
+    transform: translateX(25px);
+  }
 }
 
 .advantages__indi--weight::before {
-    content: "";
+  content: '';
 
-    transform: translateX(23px);
+  transform: translateX(23px);
 
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 
-    background-color: $accent-color;
+  background-color: $accent-color;
 
-    background-image: url(/src/images/advantages/weight.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/src/images/advantages/weight.png);
+  background-repeat: no-repeat;
+  background-position: center;
 
-    @media screen and (min-width: 768px) {
-        transform: translateX(37px);
-    }
+  @include mq('tablet') {
+    transform: translateX(37px);
+  }
 
-    @media screen and (min-width: 1200px) {
-        transform: translateX(50px);
-    }
+  @include mq('desktop') {
+    transform: translateX(48px);
+  }
 }
 
 .advantages__indi--cream::before {
-    content: "";
+  content: '';
 
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 
-    background-color: $accent-color;
+  background-color: $accent-color;
 
-    background-image: url(/src/images/advantages/ice-crema.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/src/images/advantages/ice-crema.png);
+  background-repeat: no-repeat;
+  background-position: center;
 
-    @media screen and (min-width: 768px) {
-        transform: translateX(10px);
-    }
+  @include mq('tablet') {
+    transform: translateX(10px);
+  }
 
-    @media screen and (min-width: 1200px) {
-        transform: translateX(15px);
-    }
+  @include mq('desktop') {
+    transform: translateX(15px);
+  }
 }
 
 .advantages__text {
-    margin-top: 22px;
-    width: 230px;
+  margin-top: 22px;
+  width: 230px;
 
-    text-align: center;
-    font-family: $main-fon;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 170%;
+  text-align: center;
+  font-family: $main-fon;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
 
-    color: $white-text-color;
+  color: $white-text-color;
 
-    @media screen and (min-width: 768px) {
-        width: 152px;
+  @include mq('tablet') {
+    width: 152px;
 
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 174%;
-    }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 275px;
+  @include mq('desktop') {
+    width: 275px;
 
-        font-size: 16px;
-        line-height: 176%;
-    }
+    font-size: 16px;
+    line-height: 176%;
+  }
 }
