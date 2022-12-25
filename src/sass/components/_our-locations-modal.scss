@@ -81,10 +81,8 @@ margin-bottom: 20px;
 .location__wrapper {
  margin-left: auto;
  margin-right: auto;
+ display: block;
     margin-bottom: 24px;
-    width: 224px;
-    height: 199px;
-    border: 2px solid $accent-color;
 }
 
 .location__btn {
@@ -99,12 +97,11 @@ font-size: 12px;
 line-height: 1.25;
 text-align: center;
 color:$primary-text-color;
+text-decoration: none;
 &:hover {
     background-color: $primary-bg-color;
-    text-decoration: none;
 }
 &:focus {
     background-color: $primary-bg-color;
     color: $focus-color;
-    text-decoration: none;
 }}
