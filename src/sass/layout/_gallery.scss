@@ -2,12 +2,12 @@
   width: 280px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: -100px;
+  margin-bottom: -98px;
 
   @include mq(tablet) {
     width: 704px;
     height: 327px;
-    margin-bottom: -300px;
+    margin-bottom: -183px;
   }
 
   @include mq(desktop) {
@@ -20,7 +20,7 @@
     animation-iteration-count: infinite;
     overflow: hidden;
     border-radius: 18px;
-    margin-bottom: -423px;
+    margin-bottom: -324px;
     transform: translateY(-32px);
   }
 
