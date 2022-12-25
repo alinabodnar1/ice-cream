@@ -2,7 +2,6 @@
     display: inline-block;
     color: #000000;
     background-color: $accent-color;
-    font-family: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -15,6 +14,8 @@
     transition: background-color 300ms $timing-function, color 300ms $timing-function, border-color 300ms $timing-function;
     @include mq(tablet) {
         min-width: 121px;
+        font-size: 14px;
+        line-height: 1.21;
     }
 
     &:hover,
