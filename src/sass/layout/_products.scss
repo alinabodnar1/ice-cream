@@ -4,8 +4,6 @@
     padding: 60px 0;
     @media (min-resolution: 2dppx) {
         background-image: url(../images/bcg/bcg_mob_@2x.png);
-        width: 857px;
-        height: 1187px;
     }
     @include mq(tablet) {
         background-image: url(../images/bcg/bcg_tab_@1x.png);

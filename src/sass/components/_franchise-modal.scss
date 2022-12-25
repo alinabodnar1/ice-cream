@@ -1,22 +1,71 @@
-.modal {
-    display: inline-block;
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 568px;
+    height: 100%;
+    line-height: calc(100vh - 20px);
+    overflow: auto;
+    background: rgba(132, 161, 120, 0.9);
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+    transition: opacity 300ms $timing-function;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+
+        .franchise-modal {
+            transform: scale(0);
+        }
+    }
+}
+
+.franchise-modal {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 280px;
     background: $white-text-color;
-    border: 2px solid #F8D24E;
+    border: 2px solid $accent-color;
     border-radius: 10px;
     text-align: left;
-    padding: 28px;
+    padding: 26px;
+    font-size: 14px;
+    line-height: 1.43;
+    transition: transform 300ms $timing-function 300ms;
+    @include mq(tablet) {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 30px 58px;
+        max-width: 568px;
+    }    
 
     &__close {
-        display: inline-block;
-
-        &:hover {
-            fill: $accent-color;
+        position: absolute;
+        top: 17px;
+        right: 17px;
+        background-color: transparent;
+        border: none;
+        width: 11px;
+        height: 11px;
+        padding: 0;
+        cursor: pointer;
+        @include mq(tablet) {
+            width: 14px;
+            height: 14px;
         }
 
+        &:hover,
         &:focus {
             fill: $hover-color;
+        }
+
+        &-icon {
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -26,46 +75,79 @@
         line-height: 1.5;
         text-align: center;
         margin-bottom: 20px;
+        @include mq(tablet) {
+            font-size: 20px;
+            line-height: 1.4;
+            max-width: 322px;
+            margin: 0 auto 24px;
+        }
     }
 
     &__text {
-        line-height: 1.43;
         margin-bottom: 24px;
+        @include mq(tablet) {
+            margin-bottom: 32px;
+        }
     }
 }
 
-
-.form {
+.franchise-form {
     text-align: center;
-
-    &__group {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    @include mq(tablet) {
+        max-width: 368px;
+        margin: 0 auto;
+        font-size: 14px;
     }
 
-    &__input {
+    &__group {
+        margin-bottom: 12px;
+        @include mq(tablet) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__input, 
+    &__coment {
         display: block;
         padding: 8px 12px;
-        height: 28px;
+        width: 100%;
+        height: 32px;
         background: rgba(248, 210, 78, 0.1);
         border: 1px solid #84A178;
         border-radius: 10px;
         color: $primary-text-color;
-        font-size: 12px;
-        line-height: 1.4;
-
+        outline: none;
+        cursor: pointer;
+        transition: baground-color 300ms $timing-function;
+        @include mq(tablet) {
+            padding: 11px 16px;
+            height: 42px;
+        }
+       
         &::placeholder {
             color: rgba(19, 19, 19, 1);
         }
-
-        &:hover {
-            background: rgba(10, 136, 23, 0.1);
-        }
-
+    
+        &:hover,
         &:focus {
-            border-color: #84A178;
             background: rgba(10, 136, 23, 0.1);
         }
     }
+
+    &__coment {
+        resize: none;
+        height: 64px;
+        @include mq(tablet) {
+            height: 83px;
+        }
+    }
+
+    &__button {
+        margin-top: 12px;
+        @include mq(tablet) {
+            margin-top: 16px;
+        }
+    }    
 }
