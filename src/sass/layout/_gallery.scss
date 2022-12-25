@@ -12,7 +12,6 @@
     @include mq(desktop){
         width: 1013px;
         height: 422px;
-        background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
         animation-name: changeImages;
         animation-duration: 8000ms;
         animation-direction: alternate;
