@@ -1,7 +1,16 @@
 .footer {
   background-color: $primary-bg-color;
-  padding-bottom: 20px;
   padding-top: 60px;
+  padding-bottom: 20px;
+
+  @include mq(tablet) {
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 120px;
+  }
 }
 
 .footer-title {
@@ -9,6 +18,21 @@
 
   padding-left: 2px;
   max-width: 232px;
+
+  @include mq(tablet) {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+
+    max-width: 352px;
+  }
+
+  @include mq(desktop) {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 510px;
+  }
 }
 
 .footer-subject {
@@ -20,6 +44,38 @@
   max-width: 200px;
 
   color: $white-text-color;
+
+  @include mq(tablet) {
+    margin-top: 8px;
+
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.06em;
+
+    max-width: 352px;
+  }
+  @include mq(desktop) {
+    margin-top: 14px;
+
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+
+    max-width: 510px;
+  }
+}
+
+.thumb {
+  @include mq(tablet) {
+    display: inline-block;
+  }
+
+  &--contact {
+    @include mq(tablet) {
+      display: inline-block;
+      float: right;
+    }
+  }
 }
 
 .join-social {
@@ -27,11 +83,17 @@
   justify-content: right;
 
   margin-top: 60px;
+  @include mq(desktop) {
+    margin-top: 18px;
+  }
 }
 
 .icon-list {
   display: flex;
   gap: 20px;
+  @include mq(tablet) {
+    gap: 30px;
+  }
 }
 
 .footer-contact {
@@ -39,15 +101,26 @@
   justify-content: right;
 
   margin-top: 20px;
+  @include mq(tablet) {
+    margin-top: 34px;
+  }
 
   &__text {
     font-weight: 700;
     margin-right: 4px;
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__tel {
     font-weight: 700;
     color: $white-text-color;
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -59,6 +132,13 @@
   transform: translateX(-50%);
   position: relative;
   left: 50%;
+  @include mq(tablet) {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  @include mq(desktop) {
+    margin-top: 60px;
+  }
 }
 
 .footer-rights {
@@ -67,4 +147,10 @@
   max-width: 150px;
 
   margin: auto;
+  @include mq(tablet) {
+    max-width: 298px;
+  }
+  @include mq(desktop) {
+    font-size: 12px;
+  }
 }

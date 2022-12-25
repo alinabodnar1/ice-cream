@@ -646,14 +646,41 @@ address {
 }
 .footer {
   background-color: #84a178;
-  padding-bottom: 20px;
   padding-top: 60px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 120px;
+  }
 }
 
 .footer-title {
   color: #fcfcfc;
   padding-left: 2px;
   max-width: 232px;
+}
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    max-width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    max-width: 510px;
+  }
 }
 
 .footer-subject {
@@ -664,16 +691,56 @@ address {
   max-width: 200px;
   color: #fcfcfc;
 }
+@media screen and (min-width: 768px) {
+  .footer-subject {
+    margin-top: 8px;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.06em;
+    max-width: 352px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subject {
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+    max-width: 510px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .thumb--contact {
+    display: inline-block;
+    float: right;
+  }
+}
 
 .join-social {
   display: flex;
   justify-content: right;
   margin-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .join-social {
+    margin-top: 18px;
+  }
+}
 
 .icon-list {
   display: flex;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .icon-list {
+    gap: 30px;
+  }
 }
 
 .footer-contact {
@@ -681,13 +748,28 @@ address {
   justify-content: right;
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    margin-top: 34px;
+  }
+}
 .footer-contact__text {
   font-weight: 700;
   margin-right: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-contact__text {
+    font-size: 16px;
+  }
+}
 .footer-contact__tel {
   font-weight: 700;
   color: #fcfcfc;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact__tel {
+    font-size: 16px;
+  }
 }
 
 .footer-line {
@@ -698,10 +780,31 @@ address {
   position: relative;
   left: 50%;
 }
+@media screen and (min-width: 768px) {
+  .footer-line {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-line {
+    margin-top: 60px;
+  }
+}
 
 .footer-rights {
   font-size: 14px;
   color: #7a7a7a;
   max-width: 150px;
   margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-rights {
+    max-width: 298px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-rights {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */
