@@ -1,0 +1,94 @@
+.swiper {
+    width: 100%;
+   height: 450px;
+ }
+
+.customer-reviews {
+    padding-top: 178px;
+    padding-bottom: 353px;
+
+    background-image: url(../images/bcg/bcg_mob_@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/bcg/bcg_mob_@2x.png);
+        }
+    
+    @media screen and (min-width: 768px){
+        padding-top: 283px;
+        padding-bottom: 299px;
+        background-image: url(../images/bcg/bcg_tab_@1x.png);
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/bcg/bcg_tab_@2x.png);
+            }
+    } 
+    @media screen and (min-width: 1200px) {
+        padding-top: 581px;
+        padding-bottom: 128px;
+        background-image: url(../images/bcg/bcg_desk_@1x.png);
+
+         @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/bcg/bcg_desk_@2x.png);
+    }
+}
+
+}
+
+.customer-reviews__img {
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-reviews__wrap {
+    padding: 35px 39px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $primary-bg-color;
+    border-radius: 10px;
+    min-width: 280;
+
+    @media screen and (min-width: 768px) {
+        padding: 28px 80px;
+        min-width: 545px;}
+
+         @media screen and (min-width: 1200px) {
+             padding: 42px 74px;
+             width: 968px;
+         }
+
+
+}
+.customer-reviews__text {
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color: #FCFCFC;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0.04em;}
+
+    @media screen and (min-width: 1200px) {
+            font-size: 16px;}          
+}
+
+.customer-reviews__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;}
+        
+}
