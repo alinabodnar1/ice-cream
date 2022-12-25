@@ -4,7 +4,15 @@
 @import "./utils/visually-hidden";
 
 // BASE
-@import "./base/base";
+@import "./base/button";
+
+// COMPONENTS
+@import "./components/button";
+@import "./components/buy-now-modal";
+@import "./components/franchise-modal";
+@import "./components/modal-wirh-info-about-product";
+@import "./components/our-locations-modal";
+@import "./components/read-more-modal";
 
 // LAYOUT
 @import "./layout/header";
@@ -17,13 +25,7 @@
 @import "./layout/contacts";
 @import "./layout/footer";
 
-// COMPONENTS
-@import "./components/button";
-@import "./components/buy-now-modal";
-@import "./components/franchise-modal";
-@import "./components/modal-wirh-info-about-product";
-@import "./components/our-locations-modal";
-@import "./components/read-more-modal";
+
 
 
 
