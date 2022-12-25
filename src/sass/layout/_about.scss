@@ -1,0 +1,94 @@
+.about {
+    background-color: $primary-bg-color;
+}
+
+
+.about-container {
+  text-align: center;
+  }
+
+.about-label {
+margin-bottom: 12px;
+  font-family: 'Montserrat';
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  }
+
+  .about-titel {
+    padding-bottom: 54px;
+  font-family: $secondary-fon;
+  color: $white-text-color;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-bottom: 10px;
+  color: $white-text-color;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+.about {
+    padding-top: 61px;
+    padding-bottom: 50px;
+
+&__description {
+   
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+}
+
+.image-box {
+//   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index: 99;
+}
+
+.image-box::before {
+  display: inline-block;
+//   position: absolute;
+//   top: -22px;
+  left: 50%;
+//   transform: translate(-50%, 0);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/cow/cow_mob_1x.png);
+  background-size: cover;
+  box-shadow: 0 -22px 0 0 $second-cards-color;
+  
+  content: '';
+
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  display: block;
+  background-color: $second-cards-color;
+
+}
+
+
+.about-img img {
+  display: inline-block;
+  z-index: 99;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-img {
+    z-index: 99;
+}
