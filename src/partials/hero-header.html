@@ -1,11 +1,9 @@
-<header class="header" id="Home">
+<div class="hero-header">
+  <header class="header" id="Home">
     <div class="container header__container">
-      <div class="header-logo">
-        <svg class="header-logo__icon">
+        <svg class="header__logo" width="40" height="37">
           <use href="/src/images/sprite.svg#logo"></use>
         </svg>
-      </div>
-      <div class="nav-menu">
         <nav class="site-nav">
           <ul class="site-nav__list">
             <li class="site-nav__item">
@@ -21,50 +19,42 @@
               <a class="site-nav__link" href="#contacts">Contact</a>
             </li>
           </ul>
-        </nav>
-      </div>
-  
-      <ul class="header-buttons__list">
-        <li class="header-menu__btn">
-          <div class="btn-burger">
+        </nav>  
+      <ul class="main-buttons">
+        <li class="main-buttons__item">
             <button
-              class="header-menu__button js-open-menu"
+              class="main-buttons__burger js-open-menu"
               type="button"
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg class="header-menu__burger" width="32" height="32">
-                <use href="/src/images/sprite.svg#menu"></use>
+              <svg class="main-buttons__icon" width="32" height="32">
+                <use href="/src/images/sprite.svg#burger"></use>
               </svg>
             </button>
-          </div>
         </li>
-        <li class="header-menu__icon">
-          <div class="btn-buy">
+        <li class="main-buttons__item ">
             <button
-              class="header-modal__button"
-              type="button"
-  
-            >
+              class="main-buttons__buy main-buttons__buy--header"
+              type="button">
               Buy now
-              <svg class="header-modal__icon" width="12" height="12">
+              <svg class="main-buttons__arrow-icon" width="12" height="12">
                 <use href="/src/images/sprite.svg#arrow-right"></use>
               </svg>
             </button>
-          </div>
         </li>
       </ul>
     </div>
   </header>
   
   <!-- Mobile menu -->
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <svg class="mobile-menu__logo" width="40" height="31">
+  <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+    <svg class="mobile-menu__logo" width="40" height="37">
       <use href="/src/images/sprite.svg#logo"></use>
     </svg>
-    <button class="menu-toggle js-close-menu">
+    <button class="mobile-menu__toggle js-close-menu">
       <svg width="32" height="32">
-        <use href="/src/images/sprite.svg#close-modal"></use>
+        <use href="/src/images/sprite.svg#close"></use>
       </svg>
     </button>
   
@@ -83,12 +73,13 @@
       </li>
     </ul>
   
-    <div class="btn-mobile">
-      <button class="header-modal__button" type="button">
+    <div class="mobile-menu__btn">
+      <button class="main-buttons__buy" type="button">
         Buy now
-        <svg class="header-modal__icon" width="12" height="12">
+        <svg class="main-buttons__arrow-icon" width="12" height="12">
           <use href="/src/images/sprite.svg#arrow-right"></use>
         </svg>
       </button>
     </div>
   </div>
+</div>
