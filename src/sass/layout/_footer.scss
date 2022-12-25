@@ -94,6 +94,14 @@
   @include mq(tablet) {
     gap: 30px;
   }
+
+  &__icon {
+    fill: $primary-bg-color;
+
+    &:hover, &:focus{
+      fill: $white-text-color;
+    }
+  }
 }
 
 .footer-contact {
@@ -127,6 +135,7 @@
 .footer-line {
   margin-top: 40px;
   margin-bottom: 20px;
+  color: $border-color;
 
   width: 100vw;
   transform: translateX(-50%);
@@ -138,6 +147,7 @@
   }
   @include mq(desktop) {
     margin-top: 60px;
+    width: 100%;
   }
 }
 
