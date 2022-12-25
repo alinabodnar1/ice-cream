@@ -90,6 +90,9 @@
     fill: $focus-color;
   }
   &__buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &--header {
       display: none;
     
