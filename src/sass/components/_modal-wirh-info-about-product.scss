@@ -1,27 +1,3 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    line-height: calc(100vh - 20px);
-    overflow: auto;
-    background: rgba(132, 161, 120, 0.9);
-    text-align: center;
-    padding: 10px;
-    z-index: 100;
-    transition: opacity 300ms $timing-function;
-
-    &.is-hidden {
-        opacity: 0;
-        visibility: hidden;
-
-        .modal {
-            transform: scale(0);
-        }
-    }
-}
-
 .product-modal {
     position: relative;
     display: inline-block;
@@ -32,27 +8,25 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 26px 20px;
     font-size: 14px;
     line-height: 1.76;
     transition: transform 300ms $timing-function 300ms;
-
     @include mq(tablet) {
-        padding: 40px 32px;
+        padding: 30px 32px;
         max-width: 568px;
     }
 
     &__close {
         position: absolute;
-        top: 17px;
-        right: 17px;
+        top: 13px;
+        right: 14px;
         background-color: transparent;
         border: none;
         width: 11px;
         height: 11px;
         padding: 0;
         cursor: pointer;
-
         @include mq(tablet) {
             width: 14px;
             height: 14px;
@@ -75,26 +49,31 @@
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 20px;
-
         @include mq(tablet) {
             margin: 0 auto 24px;
         }
     }
 
     &__img {
-        margin: 0 auto 25px;
+        margin: 0 auto 29px;
+        width: 132px;
         border-radius: 50%;
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         box-shadow: 0 7px 0 0 rgba(156, 190, 143, 0.7), 0 7px 0 0 #D9D9D9, 0 16px 20px rgba(10, 136, 23, 0.25);
     }
 
     &__img--yellow {
-        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-            box-shadow: 0 7px 0 0 rgba(156, 190, 143, 0.7), 0 7px 0 0 #D9D9D9, 0 16px 20px rgba(10, 136, 23, 0.25);
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.45);
+        box-shadow: 0 7px 0 0 rgba(248, 210, 78, 0.7), 0 7px 0 0 #D9D9D9, 0 16px 20px rgba(153, 114, 23, 0.45);
     }
 
+    &__img--brown {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 6px 20px rgba($third-cards-color, 0.65);
+        box-shadow: 0 7px 0 0 rgba(213, 117, 63, 0.7), 0 7px 0 0 #D9D9D9, 0 16px 20px rgba($third-cards-color, 0.65);
+    }
 
     &__subtitle {
         font-weight: 500;
@@ -113,21 +92,22 @@
     line-height: 1.2;
     margin-bottom: 40px;
     @include mq(tablet) {
+        font-size: 12px;
         gap: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 47px;
     }
 
     &__item {
         border: 2px solid $decor-elements-color;
         border-radius: 40px;
         width: 53px;
-        padding: 0 3px 15px;
+        padding: 0 3px 5px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         @include mq(tablet) {
             width: 65px;
-            padding: 0 4px 15px;
+            padding: 0 4px 12px;
         }
     }
 
@@ -135,7 +115,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         width: 43px;
         height: 43px;
         border-radius: 50%;
@@ -144,11 +124,8 @@
         @include mq(tablet) {
             width: 53px;
             height: 53px;
+            margin-bottom: 10px;
         }
-    }
-
-    &__type {
-        
     }
 
     &--yellow {
@@ -163,25 +140,49 @@
             }
         }
     }
+
+    &--brown {
+        .composition {
+            &__item {
+                border-color: $third-cards-color;
+            }
+    
+            &__value {
+                background-color: $third-cards-color;
+                box-shadow: 0px 6px 20px rgba($third-cards-color, 0.65);
+            }
+        }
+    }
 }
-
-
 
 .ingredients {
     display: flex;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.76;
-    margin-bottom: 11px;
-    
+    letter-spacing: 0.04em;
+    margin-bottom: 39px;
+    @include mq(tablet) {
+        margin-bottom: 48px;
+    }
+
     &__compound {
         text-align: start;
         width: 60%;
     }    
-
+    
     &__value {
         text-align: end;
+        margin-bottom: 12px;
         width: 23%;
+        @include mq(tablet) {
+            width: 31%;
+            margin-bottom: 11px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -229,7 +230,25 @@
 
         &:hover,
         &:focus {
-            background: rgba(10, 136, 23, 0.1);
+            background: rgba(174, 198, 165, 0.3);
+        }
+    }
+
+    &__input--yellow,
+    &__coment--yellow {
+       
+        &:hover,
+        &:focus {
+            background: rgba(248, 210, 78, 0.3);
+        }
+    }
+
+    &__input--brown,
+    &__coment--brown {
+        background: rgba(214, 147, 109, 0.1);
+        &:hover,
+        &:focus {
+            background: rgba(214, 147, 109, 0.3);
         }
     }
 
