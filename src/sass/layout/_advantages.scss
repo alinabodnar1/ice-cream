@@ -1,14 +1,11 @@
 .advantages {
   padding-top: 0;
   padding-bottom: 64px;
-
   background-color: $primary-bg-color;
-
-  @include mq('tablet') {
+  @include mq(tablet) {
     padding-bottom: 204px;
   }
-
-  @include mq('desktop') {
+  @include mq(desktop) {
     padding-bottom: 178px;
   }
 
@@ -16,14 +13,12 @@
     display: flex;
     flex-direction: column;
     gap: 22px;
-
-    @include mq('tablet') {
+    @include mq(tablet) {
       flex-direction: row;
       justify-content: center;
       gap: 80px;
     }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       gap: 125px;
     }
   }
@@ -34,66 +29,52 @@
     align-items: center;
   }
 
-  @include mq('tablet') {
-    flex-direction: row;
-  }
-
   &__indi {
     font-family: $main-fon;
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(44 / 36);
-
+    line-height: 1.22;
     text-align: center;
     letter-spacing: 0.04em;
 
     color: $white-text-color;
-
-    &::before {
-      margin-bottom: 16px;
-
-      @include mq('tablet') {
-        margin-bottom: 32px;
-      }
-
-      @include mq('desktop') {
-        margin-bottom: 40px;
-      }
-    }
-
-    @include mq('tablet') {
+    @include mq(tablet) {
       text-transform: lowercase;
       font-size: 48px;
       line-height: calc(59 / 48);
     }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       font-size: 58px;
       line-height: calc(71 / 58);
+    }
+
+    &::before {
+      margin-bottom: 16px;
+      @include mq(tablet) {
+        margin-bottom: 32px;
+      }
+      @include mq(desktop) {
+        margin-bottom: 40px;
+      }
     }
   }
 
   &__indi--cow::before {
     content: '';
-
     transform: translateX(4px);
-
     display: block;
     width: 50px;
     height: 50px;
     border-radius: 50px;
 
     background-color: $accent-color;
-
     background-image: url(/src/images/advantages/cow.png);
     background-repeat: no-repeat;
     background-position: center;
-
-    @include mq('tablet') {
+    @include mq(tablet) {
       transform: translateX(16px);
     }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       transform: translateX(25px);
     }
     @media (min-device-pixel-ratio: 2),
@@ -106,25 +87,20 @@
 
   &__indi--weight::before {
     content: '';
-
     transform: translateX(23px);
-
     display: block;
     width: 50px;
     height: 50px;
     border-radius: 50px;
 
     background-color: $accent-color;
-
     background-image: url(/src/images/advantages/weight.png);
     background-repeat: no-repeat;
     background-position: center;
-
-    @include mq('tablet') {
+    @include mq(tablet) {
       transform: translateX(37px);
     }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       transform: translateX(48px);
     }
     @media (min-device-pixel-ratio: 2),
@@ -137,23 +113,19 @@
 
   &__indi--cream::before {
     content: '';
-
     display: block;
     width: 50px;
     height: 50px;
     border-radius: 50px;
 
     background-color: $accent-color;
-
     background-image: url(/src/images/advantages/ice-crema.png);
     background-repeat: no-repeat;
     background-position: center;
-
-    @include mq('tablet') {
+    @include mq(tablet) {
       transform: translateX(10px);
     }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       transform: translateX(15px);
     }
     @media (min-device-pixel-ratio: 2),
@@ -171,21 +143,18 @@
     font-family: $main-fon;
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
-
+    line-height: 1.7;
+    
     color: $white-text-color;
-
-    @include mq('phone-only') {
+    @include mq(phone-only) {
       padding: 0 50px;
     }
-
-    @include mq('tablet') {
+    @include mq(tablet) {
       font-weight: 400;
       font-size: 14px;
       line-height: 174%;
     }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       font-size: 16px;
       line-height: 176%;
     }
