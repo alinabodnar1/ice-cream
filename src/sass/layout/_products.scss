@@ -192,9 +192,10 @@
 }   
 
 .more {
-    margin-top: auto;
     fill: $primary-text-color;
     border: none;
+    max-width: 60px;
+    margin: auto auto 0;
     background-color: transparent;
     cursor: pointer;
     transition: fill 300ms $timing-function, scale 300ms $timing-function;
