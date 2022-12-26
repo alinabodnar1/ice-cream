@@ -1,0 +1,194 @@
+.about {
+  background-color: $primary-bg-color;
+  padding-top: 61px;
+  padding-bottom: 50px;
+
+  &__container {
+    text-align: center;
+    @include mq(tablet) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include mq(desktop) {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 12px;
+    font-family: 'Montserrat';
+    color: $white-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    @include mq(tablet) {
+      font-size: 22px;
+    }
+    @include mq(desk) {
+      font-size: 30px;
+    }
+  }
+
+  &__titel {
+    padding-bottom: 54px;
+    font-family: $secondary-fon;
+    color: $white-text-color;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @include mq(tablet) {
+      font-size: 34px;
+    }
+    @include mq(desktop) {
+      font-size: 36px;
+    }
+  }
+
+  &__content {
+    @include mq(tablet) {
+      display: flex;
+      padding-top: 72px;
+    }
+  }
+
+  &__description {
+    padding-top: 40px;
+    padding-bottom: 0;
+    @include mq(tablet) {
+      padding-left: 38px;
+      padding-top: 0;
+      display: inline-block;
+    }
+    @include mq(desktop) {
+      padding-left: 109px;
+      padding-right: 121px - 16px;
+    }
+  }
+
+  &__text {
+    color: $white-text-color;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+      @include mq(tablet) {
+        margin-bottom: 8px;
+      }
+    }
+    @include mq(tablet) {
+      text-align: left;
+    }
+    @include mq(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    margin-top: 10px;
+    background-color: $accent-color;
+    min-width: 196px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    text-align: center;
+    color: inherit;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    @include mq(tablet) {
+      margin-top: 32px;
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &:focus {
+      background-color: $hover-color;
+      color: #fff;
+
+      .about__icon {
+      fill: $focus-color;
+    }
+
+    }
+}
+
+  &__icon {
+  position: absolute;
+  left: 70%;
+  transform: translate(50%, 25%);
+
+    &:focus {
+      fill: $focus-color;
+    }
+  }
+}
+
+
+
+.text-wrapper {
+  @include mq(phone-only) {
+    height: 220px;
+    overflow: hidden;
+  }
+}
+
+
+.image-box {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index: 99;
+
+  &::before {
+  content: '';
+  display: block;
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $second-cards-color;
+  background-size: cover;
+  box-shadow: 0 -22px 0 0 $second-cards-color;
+  background-image: url(../images/cow/cow_mob_1x.png);
+  @media (min-resolution: 2dppx) {
+  background-image: url(../images/cow/cow_mob_2x.png);
+  }
+  @include mq(tablet) {
+    width: 330px;
+    height: 330px;
+    box-shadow: 0 -26px 0 0 $second-cards-color;
+    background-image: url(../images/cow/cow_tab_1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/cow/cow_tab_2x.png);
+    }
+  }
+  @include mq(desktop) {
+    width: 490px;
+    height: 490px;
+    box-shadow: 0 -40px 0 0 $second-cards-color;
+    background-image: url(../images/cow/cow_desk_1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/cow/cow_desk_2x.png);
+    }
+  }
+}
+}
+
