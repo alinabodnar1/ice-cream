@@ -1,12 +1,14 @@
 <div class="backdrop is-hidden" data-modal id="product-icecream">
-    <div class="product-modal">
+    <div class="modal product-modal">
         <button class="product-modal__close" data-modal-close>
             <svg class="product-modal__close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
         <h3 class="product-modal__title">Chololate icecream</h3>
-        <img class="product-modal__img" src="./images/Chocolatea_ice_cream_modal/chololate_ice_cream_mob_@1.png"
+        <img class="product-modal__img" srcset="./images/Chocolatea_ice_cream_modal/chocolatea_ice_cream_mob_@1.png 132w,
+                    ./images/Chocolatea_ice_cream_modal/chocolatea_ice_cream_mob_@2.png 264w"
+            src="./images/Chocolatea_ice_cream_modal/chocolatea_ice_cream_mob_@1.png" sizes="100vw"
             alt="chocololatea_ice_cream">
         <ul class="composition">
             <li class="composition__item">
@@ -54,54 +56,58 @@
 </div>
 
 <div class="backdrop is-hidden" data-modal id="product-icecoffee">
-    <div class="product-modal">
+    <div class="modal product-modal">
         <button class="product-modal__close" data-modal-close>
             <svg class="product-modal__close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        <h3 class="product-modal__title">Chololate icecream</h3>
-        <img class="product-modal__img product-modal__img--yellow"
-            src="./images/Chocolatea_ice_cream_modal/chololate_ice_cream_mob_@1.png" alt="chocololatea_ice_cream">
+        <h3 class="product-modal__title">Chololate ice coffee</h3>
+        <img class="product-modal__img product-modal__img--yellow" srcset="./images/bay_now_modal/buy_now2_mob_@1.png 132w,
+                ./images/bay_now_modal/buy_now2_mob_@1.png 264w" src="./images/bay_now_modal/buy_now2_mob_@1.png"
+            sizes="100vw" alt="ice-coffee">
         <ul class="composition composition--yellow">
             <li class="composition__item">
-                <span class="composition__value">320</span>kcal
+                <span class="composition__value">180</span>kcal
             </li>
             <li class="composition__item">
-                <span class="composition__value">4g</span>Prote...
+                <span class="composition__value">3g</span>Prote...
             </li>
             <li class="composition__item">
-                <span class="composition__value">8,2g</span>Fats
+                <span class="composition__value">3,2g</span>Fats
             </li>
             <li class="composition__item">
-                <span class="composition__value">40,4g</span>Carbs
+                <span class="composition__value">43,4g</span>Carbs
             </li>
         </ul>
-        <h4 class="product-modal-subtitle">Ingredients</h4>
+        <h4 class="product-modal__subtitle">Ingredients</h4>
         <dl class="ingredients">
             <dt class="ingredients__compound">Milk</dt>
-            <dd class="ingredients__value">100ml</dd>
+            <dd class="ingredients__value">120ml</dd>
             <dt class="ingredients__compound">Belgian chocolate</dt>
-            <dd class="ingredients__value">20g</dd>
+            <dd class="ingredients__value">10g</dd>
             <dt class="ingredients__compound">Cream</dt>
-            <dd class="ingredients__value">150 ml</dd>
+            <dd class="ingredients__value">100 ml</dd>
             <dt class="ingredients__compound">Cocoa powder</dt>
-            <dd class="ingredients__value">30g</dd>
-            <dt class="ingredients__compound">Sugar</dt>
             <dd class="ingredients__value">40g</dd>
+            <dt class="ingredients__compound">Sugar</dt>
+            <dd class="ingredients__value">80g</dd>
             <dt class="ingredients__compound">Vanilla sugar</dt>
             <dd class="ingredients__value">10g</dd>
         </dl>
 
         <form class="product-form">
             <div class="product-form__group">
-                <input class="product-form__input" type="text" name="user-name" placeholder="Name">
+                <input class="product-form__input product-form__input--yellow" type="text" name="user-name"
+                    placeholder="Name">
             </div>
             <div class="product-form__group">
-                <input class="product-form__input" type="tel" name="tel" placeholder="Phone">
+                <input class="product-form__input product-form__input--yellow" type="tel" name="tel"
+                    placeholder="Phone">
             </div>
             <div class="product-form__group">
-                <textarea class="product-form__coment" name="coment" rows="3" placeholder="Comment"></textarea>
+                <textarea class="product-form__coment product-form__coment--yellow" name="coment" rows="3"
+                    placeholder="Comment"></textarea>
             </div>
             <button class="btn product-form__button" type="submit">Submit</button>
         </form>
@@ -109,39 +115,40 @@
 </div>
 
 <div class="backdrop is-hidden" data-modal id="product-milkshakes">
-    <div class="product-modal">
+    <div class=" modal product-modal">
         <button class="product-modal__close" data-modal-close>
             <svg class="product-modal__close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
         <h3 class="product-modal__title">Chololate milkshakes</h3>
-        <img class="product-modal__img" src="./images/Chocolatea_ice_cream_modal/chololate_ice_cream_mob_@1.png"
-            alt="chocololatea_ice_cream">
-        <ul class="composition composition--yellow">
+        <img class="product-modal__img product-modal__img--brown" srcset="./images/bay_now_modal/buy_now3_mob_@1.png 132w,
+                    ./images/bay_now_modal/buy_now3_mob_@1.png 264w" src="./images/bay_now_modal/buy_now3_mob_@1.png"
+            sizes="100vw" alt="milkshakes">
+        <ul class="composition composition--brown">
             <li class="composition__item">
-                <span class="composition__value">320</span>kcal
+                <span class="composition__value">275</span>kcal
             </li>
             <li class="composition__item">
-                <span class="composition__value">4g</span>Prote...
+                <span class="composition__value">3,7g</span>Prote...
             </li>
             <li class="composition__item">
-                <span class="composition__value">8,2g</span>Fats
+                <span class="composition__value">6,2g</span>Fats
             </li>
             <li class="composition__item">
-                <span class="composition__value">40,4g</span>Carbs
+                <span class="composition__value">41,4g</span>Carbs
             </li>
         </ul>
-        <h4 class="product-modal-subtitle">Ingredients</h4>
+        <h4 class="product-modal__subtitle">Ingredients</h4>
         <dl class="ingredients">
             <dt class="ingredients__compound">Milk</dt>
-            <dd class="ingredients__value">100ml</dd>
+            <dd class="ingredients__value">200ml</dd>
             <dt class="ingredients__compound">Belgian chocolate</dt>
-            <dd class="ingredients__value">20g</dd>
+            <dd class="ingredients__value">15g</dd>
             <dt class="ingredients__compound">Cream</dt>
-            <dd class="ingredients__value">150 ml</dd>
+            <dd class="ingredients__value">100 ml</dd>
             <dt class="ingredients__compound">Cocoa powder</dt>
-            <dd class="ingredients__value">30g</dd>
+            <dd class="ingredients__value">40g</dd>
             <dt class="ingredients__compound">Sugar</dt>
             <dd class="ingredients__value">40g</dd>
             <dt class="ingredients__compound">Vanilla sugar</dt>
@@ -150,13 +157,15 @@
 
         <form class="product-form">
             <div class="product-form__group">
-                <input class="product-form__input" type="text" name="user-name" placeholder="Name">
+                <input class="product-form__input product-form__input--brown" type="text" name="user-name"
+                    placeholder="Name">
             </div>
             <div class="product-form__group">
-                <input class="product-form__input" type="tel" name="tel" placeholder="Phone">
+                <input class="product-form__input product-form__input--brown" type="tel" name="tel" placeholder="Phone">
             </div>
             <div class="product-form__group">
-                <textarea class="product-form__coment" name="coment" rows="3" placeholder="Comment"></textarea>
+                <textarea class="product-form__coment product-form__coment--brown" name="coment" rows="3"
+                    placeholder="Comment"></textarea>
             </div>
             <button class="btn product-form__button" type="submit">Submit</button>
         </form>
