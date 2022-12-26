@@ -1,0 +1,232 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 236px;
+  margin: 0 auto;
+  position: relative;
+
+  @include mq(phone) {
+    max-width: 480px;
+  }
+
+  @include mq(tablet) {
+     padding-bottom: 12px;
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 65px;
+    max-width: 1200px;
+  }
+
+  &__container {
+    @include mq(tablet) {
+      display: flex;
+    }
+  }
+
+  &__header {
+    max-width: 247px;
+    font-family: $secondary-fon;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    color: $white-text-color;
+  
+    &--big {
+      font-size: 33px;
+      @include mq(desktop) {
+        font-size: inherit;
+      }
+    }
+  
+    @include mq(desktop) {
+      font-size: 38px;
+      max-width: 367px;
+    }
+  }
+
+  &__buttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 32px;
+  
+    @include mq(tablet) {
+      margin-top: 24px;
+    }
+  
+    @include mq(desktop) {
+      margin-top: 28px;
+    }
+  }
+  
+  &__products-btn {
+    margin-right: 12px;
+    padding: 11px 26px;
+  
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+    color: $primary-text-color;
+  
+    @include mq(desktop) {
+      margin-right: 34px;
+      padding: 12px 34px;
+      font-size: 14px;
+    }
+    &:hover {
+      border-color: $hover-color;
+      text-decoration: none;
+    }
+    &:focus {
+      color: $focus-color;
+      border-color: $hover-color;
+    }
+    &:disabled {
+      color: $disabled-color;
+    }
+  }
+
+  &__question-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-decoration: underline;
+    color: $accent-color;
+    &:hover {
+      color: $hover-color;
+    }
+    &:focus {
+      color: $focus-color;
+    }
+    &:disabled {
+      color: $disabled-color;
+    }
+  }
+
+  &__cone-img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 83px;
+  
+    @include mq(tablet) {
+      // right: 92px;
+      left: 408px;
+    }
+    @include mq(desktop) {
+      // right: 92px;
+      left: 652px;
+    }
+  }
+
+  &__dots-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.invite {
+  position: relative;
+  z-index: 2;
+  display: none;
+  @include mq(tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 42px;
+  }
+
+  &__bowl-img {
+    @include mq(tablet) {
+      margin-right: 32px;
+    }
+  
+    @include mq(desktop) {
+      margin-right: 16px;
+    }
+  }
+
+  &__description {
+    position: relative;
+  }
+
+  &__text {
+    line-height: 1.4;
+    color: $white-text-color;
+    @include mq(tablet) {
+      max-width: 140px;
+      font-size: 12px;
+    }
+    @include mq(desktop) {
+      max-width: 200px;
+      font-size: 14px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      transform: translateX(20%);
+    }
+    @include mq(tablet) {
+      margin-top: 12px;
+      justify-content: left;
+      color: $white-text-color;
+      fill: $white-text-color;
+    }
+  
+    @include mq(desktop) {
+      margin-top: 24px;
+    }
+  }
+}
+
+.numbers {
+  margin-left: auto;
+
+  &__description {
+    display: none;
+    @include mq(tablet) {
+      display: block;
+      margin-top: 14px;
+      font-size: 8px;
+      line-height: 1.21;
+      text-align: right;
+      color: $white-text-color;
+      &--accent {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary-text-color;
+      }
+    }
+  
+    @include mq(desktop) {
+      margin-top: 8px;
+      font-size: 14px;
+      &--accent {
+        font-size: 46px;
+      }
+    }
+  }
+}
