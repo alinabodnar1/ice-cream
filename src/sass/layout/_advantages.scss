@@ -96,6 +96,12 @@
     @include mq('desktop') {
       transform: translateX(25px);
     }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 36px 36px;
+      background-image: url(/src/images/advantages/cow@2x.png);
+    }
   }
 
   &__indi--weight::before {
@@ -121,6 +127,12 @@
     @include mq('desktop') {
       transform: translateX(48px);
     }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 36px 36px;
+      background-image: url(/src/images/advantages/weight@2x.png);
+    }
   }
 
   &__indi--cream::before {
@@ -144,6 +156,12 @@
     @include mq('desktop') {
       transform: translateX(15px);
     }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 36px 36px;
+      background-image: url(/src/images/advantages/ice-crema@2x.png);
+    }
   }
 
   &__text {
@@ -162,14 +180,12 @@
     }
 
     @include mq('tablet') {
-
       font-weight: 400;
       font-size: 14px;
       line-height: 174%;
     }
 
     @include mq('desktop') {
-
       font-size: 16px;
       line-height: 176%;
     }
