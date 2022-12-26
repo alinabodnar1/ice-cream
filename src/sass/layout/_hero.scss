@@ -35,7 +35,7 @@
   
     color: $white-text-color;
   
-    span {
+    &--big {
       font-size: 33px;
       @include mq(desktop) {
         font-size: inherit;
@@ -210,7 +210,7 @@
       line-height: 1.21;
       text-align: right;
       color: $white-text-color;
-      span {
+      &--accent {
         font-weight: 900;
         font-size: 28px;
         line-height: 1.21;
@@ -224,7 +224,7 @@
     @include mq(desktop) {
       margin-top: 8px;
       font-size: 14px;
-      span {
+      &--accent {
         font-size: 46px;
       }
     }
