@@ -132,19 +132,23 @@
     &:focus {
       background-color: $hover-color;
       color: #fff;
-    }
 
-    &:focus svg {
+      .about__icon {
       fill: $focus-color;
     }
-  }
+
+    }
 }
 
-.button-icon {
+  &__icon {
   position: absolute;
   left: 70%;
   transform: translate(50%, 25%);
 }
+
+}
+
+
 
 .text-wrapper {
   @include mq(phone-only) {
@@ -152,6 +156,7 @@
     overflow: hidden;
   }
 }
+
 
 .image-box {
   margin-left: auto;
