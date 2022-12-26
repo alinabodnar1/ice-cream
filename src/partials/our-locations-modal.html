@@ -1,5 +1,5 @@
-<div class="location__backdrop" data-modal>
-  <div class="location__modal" id="location__modal">
+<div class="location__backdrop is-hidden" data-modal id="location__modal">
+  <div class="location__modal modal">
     <button type="button" class="location__close-button" data-modal-close>
       <svg class="location__close" width="11" height="11">
         <use href="./images/sprite.svg#close"></use>
@@ -9,12 +9,12 @@
     <div class="location__wrapper">
       <iframe
         src="https://goo.gl/maps/xdVXhJScDsbo2qYx7"
-        width="224"
-        height="199"
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer nofollow"
-        class="lacation__map"
+        class="location__map"
+        width="448"
+        height="260"
       ></iframe>
     </div>
     <button type="button" class="location__btn btn">
@@ -22,11 +22,11 @@
         href="https://goo.gl/maps/xdVXhJScDsbo2qYx7"
         target="_blank"
         rel="noopener noreferrer nofollow"
-        class="lacation__map"
+        class="location__link"
         >Open map</a
       >
     </button>
   </div>
 </div>
 
-is-hidden
+
