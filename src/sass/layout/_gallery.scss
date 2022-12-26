@@ -1,60 +1,74 @@
 .gallery {
-    width: 280px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: -100px;
-    
-    @include mq(tablet){
-        width: 704px;
-        height: 327px;
-        margin-bottom: -300px;
-    }
-
-    @include mq(desktop){
-        width: 1013px;
-        height: 422px;
-        animation-name: changeImages;
-        animation-duration: 8000ms;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        overflow: hidden;
-        border-radius: 18px;
-        margin-bottom: -423px;
-        transform: translateY(-32px);
-    }
-
-&__wrap {
-  border-radius: 18px;
-  transform: translateY(-32px);
-  overflow: hidden;
+  width: 280px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: -32px;
 
   @include mq(tablet) {
-    transform: translateY(-144px);
+    width: 704px;
+    height: 327px;
+    margin-bottom: -144px;
   }
 
   @include mq(desktop) {
-    visibility: hidden;
+    width: 1013px;
+    height: 422px;
+    animation-name: changeImages;
+    animation-duration: 8000ms;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    border-radius: 18px;
+    margin-bottom: -98px;
     transform: translateY(-98px);
+  }
+
+  &__wrap {
+    border-radius: 18px;
+    transform: translateY(-32px);
+    overflow: hidden;
+
+    @include mq(tablet) {
+      transform: translateY(-144px);
+    }
+
+    @include mq(desktop) {
+      visibility: hidden;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 
-&__image {
-    display: block;
-    max-width: 100%;
-    height: auto;  
-  }
-}
 @keyframes changeImages {
   0% {
     background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  25% {
+    background-image: url(/src/images/gallery/gallery5_desk_@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   50% {
+    background-image: url(/src/images/gallery/gallery3_desk_@1x.jpg);
+  }
+
+  75% {
     background-image: url(/src/images/gallery/gallery2_desk_@1x.jpg);
   }
 
   100% {
-    background-image: url(/src/images/gallery/gallery3_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery4_desk_@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

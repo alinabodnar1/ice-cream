@@ -53,4 +53,6 @@ $main-fon: 'Montserrat', sans-serif;
 $secondary-fon: 'Seymour One', sans-serif;
 
 // кубік для анімацій
+$transition-duration: 300ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-timing-function: $timing-function;
