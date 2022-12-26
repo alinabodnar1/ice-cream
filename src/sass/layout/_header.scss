@@ -115,6 +115,10 @@
         text-align: center;
       }
     }
+
+    &--modal {
+      margin-top: 32px;
+    }
     font-size: 14px;
   }
   &__arrow-icon {
@@ -184,6 +188,8 @@
     display: flex;
     align-items: center;
     fill: $white-text-color;
+    width: 32px;
+    height: 32px;
 
     background-color: transparent;
     border: none;
