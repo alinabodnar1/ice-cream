@@ -1,15 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-    background: $white-text-color;
-    color: $primary-text-color;
-    font: 12px/1.62 'Montserrat', Arial, Helvetica, sans-serif;
+  background: $white-text-color;
+  color: $primary-text-color;
+  font: 12px/1.62 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 .list-reset {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 p,
@@ -25,36 +25,51 @@ dl,
 address,
 blockquote,
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    color: $accent-color;
-    text-decoration: none;
+  color: $accent-color;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a {
+  color: currentColor;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 .container {
-    max-width: 480px;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: 480px;
+  padding: 0 20px;
+  margin: 0 auto;
 
-    @include mq(tablet) {
-        padding: 0 32px;
-        max-width: 768px;
-    }
+  @include mq(tablet) {
+    padding: 0 32px;
+    max-width: 768px;
+  }
 
-    @include mq(desktop) {
-        padding: 0 16px;
-        max-width: 1200px;
-    }
+  @include mq(desktop) {
+    padding: 0 16px;
+    max-width: 1200px;
+  }
 }
