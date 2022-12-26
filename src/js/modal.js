@@ -14,6 +14,8 @@ function modal() {
       modal: document.getElementById(el.getAttribute(openerClass)),
     };
 
+    if (!modalGrop.modal) return;
+
     modalGrop.close = modalGrop.modal.querySelector(`[${closeClass}]`)
 
     array.push(modalGrop);
