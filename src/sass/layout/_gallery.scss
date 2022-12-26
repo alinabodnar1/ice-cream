@@ -2,26 +2,26 @@
   width: 280px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: -98px;
+  margin-bottom: -32px;
 
   @include mq(tablet) {
     width: 704px;
     height: 327px;
-    margin-bottom: -183px;
+    margin-bottom: -144px;
   }
 
   @include mq(desktop) {
     width: 1013px;
     height: 422px;
     animation-name: changeImages;
-    animation-duration: 12s;
+    animation-duration: 8000ms;
     animation-direction: alternate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     overflow: hidden;
     border-radius: 18px;
-    margin-bottom: -324px;
-    transform: translateY(-32px);
+    margin-bottom: -98px;
+    transform: translateY(-98px);
   }
 
   &__wrap {
@@ -35,7 +35,6 @@
 
     @include mq(desktop) {
       visibility: hidden;
-      transform: translateY(-98px);
     }
   }
 
