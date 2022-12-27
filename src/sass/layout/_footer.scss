@@ -11,57 +11,103 @@
   @include mq(desktop) {
     padding-top: 120px;
   }
-}
 
-.footer-title {
-  color: $white-text-color;
+  &__line {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: $border-color;
 
-  padding-left: 2px;
-  max-width: 232px;
+    width: 100vw;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
 
-  @include mq(tablet) {
-    font-size: 26px;
-    line-height: 32px;
-    letter-spacing: 0.04em;
+    @include mq(tablet) {
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
 
-    max-width: 352px;
+    @include mq(desktop) {
+      margin-top: 60px;
+      width: 100%;
+    }
   }
 
-  @include mq(desktop) {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-    max-width: 510px;
+  &__rights {
+    font-size: 14px;
+    color: $copyright-color;
+    max-width: 150px;
+
+    margin: auto;
+
+    @include mq(tablet) {
+      max-width: 298px;
+    }
+
+    @include mq(desktop) {
+      font-size: 12px;
+    }
   }
-}
 
-.footer-subject {
-  font-size: 34px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
-
-  margin-top: 16px;
-  max-width: 200px;
-
-  color: $white-text-color;
-
-  @include mq(tablet) {
-    margin-top: 8px;
-
-    font-size: 48px;
-    line-height: 59px;
-    letter-spacing: 0.06em;
-
-    max-width: 352px;
-  }
-  @include mq(desktop) {
-    margin-top: 14px;
-
+  &__title {
+    display: block;
+    color: $white-text-color;
     font-weight: 700;
-    font-size: 58px;
-    line-height: 71px;
+    font-size: 18px;
+    line-height: 22px;
 
-    max-width: 510px;
+    padding-left: 2px;
+    max-width: 232px;
+
+    @include mq(tablet) {
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+
+      max-width: 352px;
+    }
+
+    @include mq(desktop) {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 37px;
+      max-width: 510px;
+    }
+  }
+
+  &__subject {
+    display: block;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+
+    margin-top: 16px;
+    max-width: 200px;
+
+    color: $white-text-color;
+
+    @include mq(tablet) {
+      margin-top: 8px;
+
+      font-size: 48px;
+      line-height: 59px;
+      letter-spacing: 0.06em;
+
+      max-width: 352px;
+    }
+
+    @include mq(desktop) {
+      margin-top: 14px;
+
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 71px;
+
+      max-width: 510px;
+    }
   }
 }
 
@@ -78,7 +124,7 @@
   }
 }
 
-.join-social {
+.join {
   display: flex;
   justify-content: right;
 
@@ -86,19 +132,21 @@
   @include mq(desktop) {
     margin-top: 18px;
   }
-}
 
-.icon-list {
-  display: flex;
-  gap: 20px;
-  @include mq(tablet) {
-    gap: 30px;
+  &__list {
+    display: flex;
+    gap: 20px;
+
+    @include mq(tablet) {
+      gap: 30px;
+    }
   }
 
   &__icon {
     fill: $primary-bg-color;
 
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
       fill: $white-text-color;
     }
   }
@@ -129,38 +177,5 @@
     @include mq(desktop) {
       font-size: 16px;
     }
-  }
-}
-
-.footer-line {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: $border-color;
-
-  width: 100vw;
-  transform: translateX(-50%);
-  position: relative;
-  left: 50%;
-  @include mq(tablet) {
-    margin-top: 32px;
-    margin-bottom: 12px;
-  }
-  @include mq(desktop) {
-    margin-top: 60px;
-    width: 100%;
-  }
-}
-
-.footer-rights {
-  font-size: 14px;
-  color: $copyright-color;
-  max-width: 150px;
-
-  margin: auto;
-  @include mq(tablet) {
-    max-width: 298px;
-  }
-  @include mq(desktop) {
-    font-size: 12px;
   }
 }
