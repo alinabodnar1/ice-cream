@@ -52,24 +52,21 @@
                     </div>
                 </label>
             </div>
+            <div class="modal-buy__userarea">
+                <label for="user-name" class="modal-buy__about">
+                    <input name="user-name" id="user-name" type="text" placeholder="Name" class="modal-buy__input"
+                        title="Enter your name" pattern="[A-Za-z]+" required />
+                </label>
+                <label for="user-tel" class="modal-buy__about">
+                    <input name="user-tel" id="user-tel" type="tel" placeholder="Phone" class="modal-buy__input"
+                        title="for example: 0961234567" required pattern="[0-9]{10}"  />
+                </label>
+                <label for="coment" class="modal-buy__about">
+                    <textarea name="coment" id="coment" cols="30" rows="10"
+                        class="modal-buy__input modal-buy__input--comment" placeholder="Comment"
+                        minlength="12"></textarea>
+                </label>
+            </div>
 
-            <form class="form modal-buy__userarea">
-                <fieldset class="form__field">
-                    <div class="form__group">
-                        <input class="form__input" name="user-name" type="text" placeholder="Name"
-                            class="modal-buy__input" title="Enter your name" pattern="[A-Za-z]+" required />
-                    </div>
-                    <div class="form__group">
-                        <input class="form__input" name="user-tel" type="tel" placeholder="Phone"
-                            class="modal-buy__input" title="for example: 0961234567" pattern="[0-9]{10}" required />
-                    </div>
-                    <div class="form__group">
-                        <textarea class="form__coment" name="coment" cols="30" rows="10" placeholder="Comment"
-                            minlength="12"></textarea>
-                        </dsv>
-                </fieldset>
-                <button type="submit" class="btn form__button">Submit</button>
-            </form>
-        </form>
-    </div>
-</div>
+            <button type="submit" class="btn order-button">Submit</button>
+           
