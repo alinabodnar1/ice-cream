@@ -5,9 +5,10 @@
 
 // BASE
 @import "./base/base";
+@import "./base/backdrop";
+@import "./base/button";
 
 // COMPONENTS
-@import "./components/button";
 @import "./components/buy-now-modal";
 @import "./components/franchise-modal";
 @import "./components/modal-wirh-info-about-product";
@@ -23,7 +24,7 @@
 @import "./layout/gallery";
 @import "./layout/customer-reviews";
 @import "./layout/contacts";
-@import "./layout/footer";
+@import "./layout/_footer";
 
 
 

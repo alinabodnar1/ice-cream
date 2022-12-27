@@ -1,4 +1,4 @@
- .swiper-wrapper {
+  .swiper-wrapper {
     padding-top: 80px;
     padding-bottom: 40px;
 
@@ -39,8 +39,11 @@
  }
 
 .customer-reviews {
-    padding-top: 98px;
     padding-bottom: 353px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     background-image: url(../images/bcg/bcg_mob_@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
@@ -50,7 +53,7 @@
         }
     
         @include mq (tablet){
-        padding-top: 183px;
+        // padding-top: 183px;
         padding-bottom: 299px;
         background-image: url(../images/bcg/bcg_tab_@1x.png);
         
@@ -61,7 +64,6 @@
             }
     } 
         @include mq (desktop) {
-        padding-top: 324px;
         padding-bottom: 128px;
         background-image: url(../images/bcg/bcg_desk_@1x.png);
 
