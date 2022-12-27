@@ -5,13 +5,12 @@
 
 // BASE
 @import "./base/base";
-@import "./base/backdrop";
+@import "./base/modal";
 @import "./base/button";
 
 // COMPONENTS
 @import "./components/buy-now-modal";
-@import "./components/franchise-modal";
-@import "./components/modal-wirh-info-about-product";
+@import "./components/modal-with-info-about-product";
 @import "./components/our-locations-modal";
 @import "./components/read-more-modal";
 

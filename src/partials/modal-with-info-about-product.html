@@ -1,11 +1,11 @@
 <div class="backdrop is-hidden" data-modal id="product-icecream">
     <div class="modal product-modal">
-        <button class="product-modal__close" data-modal-close>
-            <svg class="product-modal__close-icon">
+        <button class="modal__close" data-modal-close>
+            <svg class="modal__close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        <h3 class="product-modal__title">Chololate icecream</h3>
+        <h3 class="modal__title">Chololate icecream</h3>
         <img class="product-modal__img" srcset="./images/Chocolatea_ice_cream_modal/chocolatea_ice_cream_mob_@1.png 132w,
                     ./images/Chocolatea_ice_cream_modal/chocolatea_ice_cream_mob_@2.png 264w"
             src="./images/Chocolatea_ice_cream_modal/chocolatea_ice_cream_mob_@1.png" sizes="100vw"
@@ -40,29 +40,31 @@
             <dd class="ingredients__value">10g</dd>
         </dl>
 
-        <form class="product-form">
-            <div class="product-form__group">
-                <input class="product-form__input" type="text" name="user-name" placeholder="Name">
-            </div>
-            <div class="product-form__group">
-                <input class="product-form__input" type="tel" name="tel" placeholder="Phone">
-            </div>
-            <div class="product-form__group">
-                <textarea class="product-form__coment" name="coment" rows="3" placeholder="Comment"></textarea>
-            </div>
-            <button class="btn product-form__button" type="submit">Submit</button>
+        <form class="form product-form">
+            <fieldset class="form__field">
+                <div class="form__group">
+                    <input class="form__input" type="text" name="user-name" placeholder="Name">
+                </div>
+                <div class="form__group">
+                    <input class="form__input" type="tel" name="tel" placeholder="Phone">
+                </div>
+                <div class="form__group">
+                    <textarea class="form__coment" name="coment" rows="3" placeholder="Comment"></textarea>
+                </div>
+            </fieldset>
+            <button class="btn form__button product-form__button" type="submit">Submit</button>
         </form>
     </div>
 </div>
 
 <div class="backdrop is-hidden" data-modal id="product-icecoffee">
     <div class="modal product-modal">
-        <button class="product-modal__close" data-modal-close>
-            <svg class="product-modal__close-icon">
+        <button class="modal__close" data-modal-close>
+            <svg class="modal__close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        <h3 class="product-modal__title">Chololate ice coffee</h3>
+        <h3 class="modal__title">Chololate ice coffee</h3>
         <img class="product-modal__img product-modal__img--yellow" srcset="./images/bay_now_modal/buy_now2_mob_@1.png 132w,
                 ./images/bay_now_modal/buy_now2_mob_@1.png 264w" src="./images/bay_now_modal/buy_now2_mob_@1.png"
             sizes="100vw" alt="ice-coffee">
@@ -96,32 +98,34 @@
             <dd class="ingredients__value">10g</dd>
         </dl>
 
-        <form class="product-form">
-            <div class="product-form__group">
-                <input class="product-form__input product-form__input--yellow" type="text" name="user-name"
-                    placeholder="Name">
-            </div>
-            <div class="product-form__group">
-                <input class="product-form__input product-form__input--yellow" type="tel" name="tel"
-                    placeholder="Phone">
-            </div>
-            <div class="product-form__group">
-                <textarea class="product-form__coment product-form__coment--yellow" name="coment" rows="3"
-                    placeholder="Comment"></textarea>
-            </div>
-            <button class="btn product-form__button" type="submit">Submit</button>
+        <form class="form product-form">
+            <fieldset class="form__field">
+                <div class="form__group">
+                    <input class="form__input product-form__input--yellow" type="text" name="user-name"
+                        placeholder="Name">
+                </div>
+                <div class="form__group">
+                    <input class="form__input product-form__input--yellow" type="tel" name="tel" placeholder="Phone">
+                </div>
+                <div class="form__group">
+                    <textarea class="form__coment product-form__coment--yellow" name="coment" rows="3"
+                        placeholder="Comment">
+                    </textarea>
+                </div>
+            </fieldset>
+            <button class="btn form__button product-form__button" type="submit">Submit</button>
         </form>
     </div>
 </div>
 
 <div class="backdrop is-hidden" data-modal id="product-milkshakes">
-    <div class=" modal product-modal">
-        <button class="product-modal__close" data-modal-close>
-            <svg class="product-modal__close-icon">
+    <div class="modal product-modal">
+        <button class="modal__close" data-modal-close>
+            <svg class="modal__close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        <h3 class="product-modal__title">Chololate milkshakes</h3>
+        <h3 class="modal__title">Chololate milkshakes</h3>
         <img class="product-modal__img product-modal__img--brown" srcset="./images/bay_now_modal/buy_now3_mob_@1.png 132w,
                     ./images/bay_now_modal/buy_now3_mob_@1.png 264w" src="./images/bay_now_modal/buy_now3_mob_@1.png"
             sizes="100vw" alt="milkshakes">
@@ -155,19 +159,22 @@
             <dd class="ingredients__value">10g</dd>
         </dl>
 
-        <form class="product-form">
-            <div class="product-form__group">
-                <input class="product-form__input product-form__input--brown" type="text" name="user-name"
-                    placeholder="Name">
-            </div>
-            <div class="product-form__group">
-                <input class="product-form__input product-form__input--brown" type="tel" name="tel" placeholder="Phone">
-            </div>
-            <div class="product-form__group">
-                <textarea class="product-form__coment product-form__coment--brown" name="coment" rows="3"
-                    placeholder="Comment"></textarea>
-            </div>
-            <button class="btn product-form__button" type="submit">Submit</button>
+        <form class="form product-form">
+            <fieldset class="form__field">
+                <div class="form__group">
+                    <input class="form__input product-form__input--brown" type="text" name="user-name"
+                        placeholder="Name">
+                </div>
+                <div class="form__group">
+                    <input class="form__input product-form__input--brown" type="tel" name="tel" placeholder="Phone">
+                </div>
+                <div class="form__group">
+                    <textarea class="form__coment product-form__coment--brown" name="coment" rows="3"
+                        placeholder="Comment">
+                    </textarea>
+                </div>
+            </fieldset>
+            <button class="btn form__button product-form__button" type="submit">Submit</button>
         </form>
     </div>
 </div>
