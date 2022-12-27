@@ -17,11 +17,11 @@
     border-radius: 18px;
     margin-bottom: -98px;
     transform: translateY(-98px);
-    background: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: changeImages 12s linear 3ms infinite normal;
+    animation: changeImages 12s linear infinite normal;
   }
 
   &__wrap {
@@ -47,35 +47,35 @@
 
 @keyframes changeImages {
   0% {
-    background: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   25% {
-    background: url(/src/images/gallery/gallery5_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery5_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   50% {
-    background: url(/src/images/gallery/gallery3_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery3_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   75% {
-    background: url(/src/images/gallery/gallery2_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery2_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   100% {
-    background: url(/src/images/gallery/gallery4_desk_@1x.jpg);
+    background-image: url(/src/images/gallery/gallery4_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
