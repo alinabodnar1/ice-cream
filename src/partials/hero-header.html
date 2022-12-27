@@ -1,9 +1,10 @@
 <div class="hero-header">
-  <header class="header" id="Home">
+  <header class="header" id="home">
     <div class="container header__container">
-      <svg class="header__logo" width="40" height="37">
-        <use href="/src/images/sprite.svg#logo"></use>
-      </svg>
+      <a href="/" id="Home"><svg class="header__logo" width="40" height="37">
+          <use href="/src/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
       <nav class="site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -22,15 +23,23 @@
       </nav>
       <ul class="main-buttons">
         <li class="main-buttons__item">
-          <button class="main-buttons__burger js-open-menu" type="button" aria-expanded="false"
-            aria-controls="mobile-menu">
+          <button
+            class="main-buttons__burger js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="main-buttons__icon" width="32" height="32">
               <use href="/src/images/sprite.svg#burger"></use>
             </svg>
           </button>
         </li>
         <li class="main-buttons__item">
-          <button class=" main-buttons__buy main-buttons__buy--header btn" type="button" data-modal-open="modal-buy">
+          <button
+            class="main-buttons__buy main-buttons__buy--header btn"
+            type="button"
+            data-modal-open="modal-buy"
+          >
             Buy now
             <svg class="main-buttons__arrow-icon" width="12" height="12">
               <use href="/src/images/sprite.svg#arrow-right"></use>
@@ -67,7 +76,10 @@
       </li>
     </ul>
     <div class="mobile-menu__btn">
-      <button class="main-buttons__buy main-buttons__buy--modal btn" type="button">
+      <button
+        class="main-buttons__buy main-buttons__buy--modal btn"
+        type="button"
+      >
         Buy now
         <svg class="main-buttons__arrow-icon" width="12" height="12">
           <use href="/src/images/sprite.svg#arrow-right"></use>
@@ -79,27 +91,43 @@
   <section class="hero">
     <div class="container hero__container">
       <div class="hero__description">
-        <h1 class="hero__header">ice cream made with <span class="hero__header--big">passion</span></h1>
+        <h1 class="hero__header">
+          ice cream made with <span class="hero__header--big">passion</span>
+        </h1>
         <div class="hero__buttons">
-          <a href="#" class="hero__products-btn">Products</a>
-          <a href="#" class="hero__question-btn">How it’s made?</a>
+          <a href="#products" class="hero__products-btn">Products</a>
+          <a href="#about" class="hero__question-btn">How it’s made?</a>
         </div>
         <div class="hero__invite invite">
           <picture class="invite__bowl-img">
-            <source media="(min-width: 1200px)"
-              srcset="/src/images/header-hero/ice_cream1_desk_@1x.png 1x, /src/images/header-hero/ice_cream1_desk_@2x.png 2x"
-              type="image/png" />
-            <source media="(min-width: 768px)"
-              srcset="/src/images/header-hero/ice_cream1_tab_@1x.png 1x, /src/images/header-hero/ice_cream1_tab_@2x.png 2x"
-              type="image/png" />
-            <img src="/src/images/header-hero/ice_cream1_tab_@1x.png" alt="bowl of ice cream" loading="lazy" />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /src/images/header-hero/ice_cream1_desk_@1x.png 1x,
+                /src/images/header-hero/ice_cream1_desk_@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /src/images/header-hero/ice_cream1_tab_@1x.png 1x,
+                /src/images/header-hero/ice_cream1_tab_@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="/src/images/header-hero/ice_cream1_tab_@1x.png"
+              alt="bowl of ice cream"
+              loading="lazy"
+            />
           </picture>
           <div class="invite__description">
             <p class="invite__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
             </p>
-            <a class="invite__arrow arrow ">
+            <a class="invite__arrow arrow">
               <svg width="40" height="16">
                 <use href="/src/images/sprite.svg#arrow"></use>
               </svg>
@@ -109,37 +137,78 @@
       </div>
       <ul class="numbers list">
         <li class="numbers__item">
-          <p class="numbers__description"><span class="numbers__description--accent">16</span><br />cafes</p>
+          <p class="numbers__description">
+            <span class="numbers__description--accent">16</span><br />cafes
+          </p>
         </li>
         <li class="numbers__item">
-          <p class="numbers__description"><span class="numbers__description--accent">23</span><br />food trucks</p>
+          <p class="numbers__description">
+            <span class="numbers__description--accent">23</span><br />food
+            trucks
+          </p>
         </li>
       </ul>
       <picture class="hero__cone-img">
-        <source media="(min-width: 1200px)"
-          srcset="/src/images/header-hero/ice_cream2_desk_@1x.png 1x, /src/images/header-hero/ice_cream2_desk_@2x.png 2x"
-          type="image/png" />
-        <source media="(min-width: 768px)"
-          srcset="/src/images/header-hero/ice_cream2_tab_@1x.png 1x, /src/images/header-hero/ice_cream2_tab_@2x.png 2x"
-          type="image/png" />
-        <source media="(max-width: 767px)"
-          srcset="/src/images/header-hero/ice_cream2_mob_@1x.png 1x, /src/images/header-hero/ice_cream2_mob_@2x.png 2x"
-          type="image/png" />
-        <img src="/src/images/header-hero/ice_cream2_mob_@1x.png" alt="Cone of ice cream" loading="lazy" />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /src/images/header-hero/ice_cream2_desk_@1x.png 1x,
+            /src/images/header-hero/ice_cream2_desk_@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /src/images/header-hero/ice_cream2_tab_@1x.png 1x,
+            /src/images/header-hero/ice_cream2_tab_@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /src/images/header-hero/ice_cream2_mob_@1x.png 1x,
+            /src/images/header-hero/ice_cream2_mob_@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="/src/images/header-hero/ice_cream2_mob_@1x.png"
+          alt="Cone of ice cream"
+          loading="lazy"
+        />
       </picture>
       <picture class="hero__dots-img">
-        <source media="(min-width: 1200px)"
-          srcset="/src/images/header-hero/dots-lg@1x.png 1x, /src/images/header-hero/dots-lg@2x.png 2x"
-          type="image/png" />
-        <source media="(min-width: 768px)"
-          srcset="/src/images/header-hero/dots-md@1x.png 1x, /src/images/header-hero/dots-md@2x.png 2x"
-          type="image/png" />
-        <source media="(max-width: 767px)"
-          srcset="/src/images/header-hero/dots-sm@1x.png 1x, /src/images/header-hero/dots-sm@2x.png 2x"
-          type="image/png" />
-        <img src="/src/images/header-hero/dots-sm@1x.png" alt="Yellow decor dots" />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /src/images/header-hero/dots-lg@1x.png 1x,
+            /src/images/header-hero/dots-lg@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /src/images/header-hero/dots-md@1x.png 1x,
+            /src/images/header-hero/dots-md@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /src/images/header-hero/dots-sm@1x.png 1x,
+            /src/images/header-hero/dots-sm@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="/src/images/header-hero/dots-sm@1x.png"
+          alt="Yellow decor dots"
+        />
       </picture>
-
     </div>
   </section>
 </div>
