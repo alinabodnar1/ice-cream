@@ -106,6 +106,7 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    fill: $focus-color;
 
     @include mq(desktop) {
       display: none;
