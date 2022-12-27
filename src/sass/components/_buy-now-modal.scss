@@ -1,5 +1,4 @@
 .modal-buy {
-
     position: fixed;
     top: 0;
     right: 0;
@@ -77,10 +76,10 @@
     }
 
     &__products:not(:first-child) {
-
         @include mq(tablet) {
-            margin-bottom: 40px;
+            margin-left: 48px;
         }
+    
     }
 
     &__checkbox {
@@ -112,6 +111,7 @@
         @include mq(tablet) {
             margin-right: 32px;
         }
+    
     }
 
     &__ellipse {
@@ -148,34 +148,22 @@
         padding-top: 35px;
     }
 
-    &__products {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 26px;
-        @include mq($tablet) {
-            margin-bottom: 40px;
-        }
-    }
-
     &__label {
         display: block;
         width: 132px;
-        margin: 0 auto;
-        // margin-top: 20px;
-        // margin-left: auto;
-        // margin-right: auto;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
 
-        // &:nth-child(even) {
-        //     margin-bottom: 32px;
-        // }
-
+        &:nth-child(even) {
+            margin-bottom: 32px;
+        }
 
         @include mq(tablet) {
             display: inline-block;
             margin-top: 0;
             
         }
-
     }
 
     &__label:not(:last-child) {
@@ -190,6 +178,7 @@
         margin-top: 32px;
         margin-left: auto;
         margin-right: auto;
+
         @include mq(tablet) {
             width: 368px;
             margin-top: 10px;
@@ -215,6 +204,7 @@
             color: black;
             font-size: 12px;
             line-height: 140%;
+
             @include mq(tablet) {
                 font-size: 14px;
             }
@@ -242,25 +232,23 @@
                 height: 84px;
             }
         }
+
     }
+
 }
 
-.form__field {
-    margin: 0 auto;
-    max-width: 368px;
-}
+ .modal-buy__checkbox:checked+.modal-buy__item {
+     background-color: #96AF8C;
+ }
 
-.modal-buy__checkbox:checked+.modal-buy__item {
-    background-color: #96AF8C;
-}
+ .modal-buy__checkbox:checked+.modal-buy__item--coffee {
+     background-color: $second-cards-color;
+ }
 
-.modal-buy__checkbox:checked+.modal-buy__item--coffee {
-    background-color: $second-cards-color;
-}
+ .modal-buy__checkbox:checked+.modal-buy__item--milkshake {
+     background-color: $third-cards-color;
+ }
 
-.modal-buy__checkbox:checked+.modal-buy__item--milkshake {
-    background-color: $third-cards-color;
-}
 
 .order-button {
     display: block;
