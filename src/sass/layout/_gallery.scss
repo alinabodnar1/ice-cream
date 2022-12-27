@@ -13,15 +13,15 @@
   @include mq(desktop) {
     width: 1013px;
     height: 422px;
-    animation-name: changeImages;
-    animation-duration: 8000ms;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     overflow: hidden;
     border-radius: 18px;
     margin-bottom: -98px;
     transform: translateY(-98px);
+    background: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: changeImages 12s linear 3ms infinite normal;
   }
 
   &__wrap {
@@ -47,28 +47,37 @@
 
 @keyframes changeImages {
   0% {
-    background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    background: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
   }
 
   25% {
-    background-image: url(/src/images/gallery/gallery5_desk_@1x.jpg);
+    background: url(/src/images/gallery/gallery5_desk_@1x.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
   }
 
   50% {
-    background-image: url(/src/images/gallery/gallery3_desk_@1x.jpg);
+    background: url(/src/images/gallery/gallery3_desk_@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   75% {
-    background-image: url(/src/images/gallery/gallery2_desk_@1x.jpg);
+    background: url(/src/images/gallery/gallery2_desk_@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   100% {
-    background-image: url(/src/images/gallery/gallery4_desk_@1x.jpg);
+    background: url(/src/images/gallery/gallery4_desk_@1x.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
   }
 }
