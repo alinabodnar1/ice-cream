@@ -1,11 +1,11 @@
 <div class="backdrop is-hidden" data-modal id="modal-buy">
     <div class="modal modal-buy__window">
-        <button type="button" class="modal-buy__close" data-modal-close>
+        <button type="button" class="modal__close" data-modal-close>
             <svg width="11" height="11">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        <h2 class="modal-buy__title">Buy now</h2>
+        <h2 class="modal__title">Buy now</h2>
 
         <form name="modal-buy" class="modal-buy__form">
             <div class="modal-buy__products">
@@ -20,7 +20,7 @@
                         ./images/bay_now_modal/buy_now1_mob_@2.png 264w"
                                 src="./images/bay_now_modal/buy_now1_mob_@1.png" alt="icecream" width="132px">
                         </div>
-                        <p class="modal-buy__product">ICE CREAM</p>
+                        <h4 class="modal-buy__product">ICE CREAM</h4>
                     </div>
                 </label>
                 <label for="icecoffee" class="modal-buy__label">
@@ -34,7 +34,7 @@
                         ./images/bay_now_modal/buy_now2_mob_@2.png 264w"
                                 src="./images/bay_now_modal/buy_now2_mob_@1.png" alt="icekoffee" width="132px">
                         </div>
-                        <p class="modal-buy__product">ICE COFFEE</p>
+                        <h4 class="modal-buy__product">ICE COFFEE</h4>
                     </div>
                 </label>
                 <label for="milkshake" class="modal-buy__label">
@@ -48,25 +48,28 @@
                         ./images/bay_now_modal/buy_now3_mob_@2.png 264w"
                                 src="./images/bay_now_modal/buy_now3_mob_@1.png" alt="milkshake" width="132px">
                         </div>
-                        <p class="modal-buy__product">MILKSHAKE</p>
+                        <h4 class="modal-buy__product">MILKSHAKE</h4>
                     </div>
                 </label>
             </div>
 
-            <div class="modal-buy__userarea">
-                <label for="user-name" class="modal-buy__about">
-                    <input name="user-name" id="user-name" type="text" placeholder="Name" class="modal-buy__input"
-                        title="Enter your name" pattern="[A-Za-z]+" required />
-                </label>
-                <label for="user-tel" class="modal-buy__about">
-                    <input name="user-tel" id="user-tel" type="tel" placeholder="Phone" class="modal-buy__input"
-                        title="for example: 0961234567" pattern="[0-9]{10}" required />
-                </label>
-                <label for="coment" class="modal-buy__about">
-                    <textarea name="coment" id="coment" cols="30" rows="10"
-                        class="modal-buy__input modal-buy__input--comment" placeholder="Comment"
-                        minlength="12"></textarea>
-                </label>
-            </div>
-
-            <button type="submit" class="btn order-button">Submit</button>
+            <form class="form modal-buy__userarea">
+                <fieldset class="form__field">
+                    <div class="form__group">
+                        <input class="form__input" name="user-name" type="text" placeholder="Name"
+                            class="modal-buy__input" title="Enter your name" pattern="[A-Za-z]+" required />
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" name="user-tel" type="tel" placeholder="Phone"
+                            class="modal-buy__input" title="for example: 0961234567" pattern="[0-9]{10}" required />
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__coment" name="coment" cols="30" rows="10" placeholder="Comment"
+                            minlength="12"></textarea>
+                        </dsv>
+                </fieldset>
+                <button type="submit" class="btn form__button">Submit</button>
+            </form>
+        </form>
+    </div>
+</div>

@@ -1,18 +1,17 @@
 <div class="backdrop is-hidden" data-modal id="location-modal">
-  <div class="modal location__modal" id="location__modal">
-    <button type="button" class="location__close-button" data-modal-close>
-      <svg class="location__close" width="11" height="11">
+  <div class="modal location-modal" id="location__modal">
+    <button type="button" class="modal__close" data-modal-close>
+      <svg class="modal__close-icon" width="11" height="11">
         <use href="./images/sprite.svg#close"></use>
       </svg>
     </button>
-    <h3 class="location__title">Our Locations</h3>
-    <div class="location__wrapper">
-      <iframe src="https://goo.gl/maps/xdVXhJScDsbo2qYx7" width="224" height="199" loading="lazy" target="_blank"
-        rel="noopener noreferrer nofollow" class="lacation__map"></iframe>
-    </div>
-    <button type="button" class="location__btn btn">
-      <a href="https://goo.gl/maps/xdVXhJScDsbo2qYx7" target="_blank" rel="noopener noreferrer nofollow"
-        class="lacation__map">Open map</a>
+    <h3 class="modal__title">Our Locations</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.55860859502!2d34.48719911234431!3d49.602134576036576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1672148994646!5m2!1sru!2sua"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" class="location-modal__map"></iframe>
+    <button type="button" class="btn location-modal__btn">
+      <a href="https://goo.gl/maps/xdVXhJScDsbo2qYx7" target="_blank" rel="noopener noreferrer nofollow">Open map</a>
     </button>
   </div>
 </div>
