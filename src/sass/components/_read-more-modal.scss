@@ -38,8 +38,8 @@
     background: $white-text-color;
     border: 2px solid $accent-color;
     border-radius: 10px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.12), 0px 13px 13px 13px rgba(0, 0, 0, 0.12),
+        0px 13px 13px 13px rgba(0, 0, 0, 0.12);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms $timing-function;
 
@@ -100,7 +100,7 @@
     }
   }
 
-  &__map {
+  &__video {
     max-width: inherit;
     max-height: inherit;
     border: none;
