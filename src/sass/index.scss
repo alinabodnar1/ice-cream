@@ -1,31 +1,26 @@
 // UTILS
-@import "./utils/variables";
-@import "./utils/mixin";
-@import "./utils/visually-hidden";
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/visually-hidden';
 
 // BASE
-@import "./base/base";
-@import "./base/modal";
-@import "./base/button";
+@import './base/base';
+@import './base/modal';
+@import './base/button';
 
 // COMPONENTS
-@import "./components/buy-now-modal";
-@import "./components/modal-with-info-about-product";
-@import "./components/our-locations-modal";
-@import "./components/read-more-modal";
+@import './components/buy-now-modal';
+@import './components/modal-with-info-about-product';
+@import './components/our-locations-modal';
+@import './components/read-more-modal';
 
 // LAYOUT
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/products";
-@import "./layout/about";
-@import "./layout/advantages";
-@import "./layout/gallery";
-@import "./layout/customer-reviews";
-@import "./layout/contacts";
-@import "./layout/_footer";
-
-
-
-
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/_footer';

@@ -1,226 +1,232 @@
 .products {
-    background: url(../images/bcg/bcg_mob_@1x.png) calc(50% - 40px) -120px / 857px 1188px;
-    text-align: center;
-    padding: 60px 0;
+  background: url(../images/bcg/bcg_mob_@1x.png) calc(50% - 40px) -120px / 857px
+    1188px;
+  text-align: center;
+  padding: 60px 0;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/bcg/bcg_mob_@2x.png);
+  }
+  @include mq(tablet) {
+    background-image: url(../images/bcg/bcg_tab_@1x.png);
+    background-size: 940px 996px;
     @media (min-resolution: 2dppx) {
-        background-image: url(../images/bcg/bcg_mob_@2x.png);
+      background-image: url(../images/bcg/bcg_tab_@2x.png);
     }
+  }
+  @include mq(desktop) {
+    background-image: url(../images/bcg/bcg_desk_@1x.png);
+    background-size: 1278px 1330px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/bcg/bcg_desk_@2x.png);
+    }
+  }
+
+  &__label {
+    display: block;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    margin-bottom: 12px;
     @include mq(tablet) {
-        background-image: url(../images/bcg/bcg_tab_@1x.png);
-        background-size: 940px 996px;
-        @media (min-resolution: 2dppx) {
-            background-image: url(../images/bcg/bcg_tab_@2x.png);
-        }
+      font-size: 22px;
+      line-height: 1.23;
     }
     @include mq(desktop) {
-        background-image: url(../images/bcg/bcg_desk_@1x.png);
-        background-size: 1278px 1330px;
-        @media (min-resolution: 2dppx) {
-            background-image: url(../images/bcg/bcg_desk_@2x.png);
-        }
+      font-size: 30px;
+      letter-spacing: 0.04em;
     }
+  }
 
-    &__label {
-        display: block;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.22;
-        text-transform: uppercase;
-        margin-bottom: 12px;
-        @include mq(tablet) {
-            font-size: 22px;
-            line-height: 1.23;
-        }
-        @include mq(desktop) {
-            font-size: 30px;
-            letter-spacing: 0.04em;
-        }
+  &__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @include mq(tablet) {
+      margin-bottom: 80px;
+      font-size: 34px;
+      line-height: 1.26;
     }
-
-    &__title {
-        font-family: 'Seymour One';
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 1.27;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-        @include mq(tablet) {
-            margin-bottom: 80px;
-            font-size: 34px;
-            line-height: 1.26;
-        }
-        @include mq(desktop) {
-            font-size: 36px;
-            line-height: 1.25;
-            letter-spacing: 0.06em;
-            margin-bottom: 120px;
-        }
+    @include mq(desktop) {
+      font-size: 36px;
+      line-height: 1.25;
+      letter-spacing: 0.06em;
+      margin-bottom: 120px;
     }
+  }
 }
 
 .card {
-    $shadow-height: 11px;
+  $shadow-height: 11px;
 
-    @extend .list-reset;
+  @extend .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 280px;
+  margin: 0 auto -60px;
+  @include mq(tablet) {
+    max-width: none;
+    flex-direction: row;
+    margin: 0 -8px -60px;
+  }
+  @include mq(desktop) {
+    $shadow-height: 16px;
+
+    margin: 0 -15px -60px;
+  }
+
+  &__set {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    max-width: 280px;
-    margin: 0 auto -60px;
+    border-radius: 24px;
+    background: $first-cards-color;
+    padding: 31px 40px 12px;
+    margin: 107px 0 60px;
+    min-height: 420px;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    transition: box-shadow 300ms $timing-function;
     @include mq(tablet) {
-        max-width: none;
-        flex-direction: row;
-        margin: 0 -8px -60px;
+      padding: 31px 26px 7px;
+      margin: 107px 8px 60px;
+      width: calc((100% - 3 * 16px) / 3);
     }
     @include mq(desktop) {
-        $shadow-height: 16px;
-        
-        margin: 0 -15px -60px;
+      padding: 31px 64px 56px;
+      margin: 182px 15px 60px;
+      width: calc((100% - 3 * 30px) / 3);
+      font-size: 16px;
     }
-        
-    &__set {
-        display: flex;
-        flex-direction: column;
-        border-radius: 24px;
-        background: $first-cards-color;
-        padding: 31px 40px 12px;
-        margin: 107px 0 60px;
-        min-height: 420px;
-        font-size: 14px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
-        transition: box-shadow 300ms $timing-function;
-        @include mq(tablet) {
-            padding: 31px 26px 7px;
-            margin: 107px 8px 60px;
-            width: calc((100% - 3 * 16px) / 3);
+
+    &:hover {
+      box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.12),
+        0px 13px 13px 13px rgba(0, 0, 0, 0.12),
+        0px 13px 13px 13px rgba(0, 0, 0, 0.12);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../images/products/products1_tab+mob_@1x.png);
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      margin: -138px 0 31px;
+      border-radius: 50%;
+      box-shadow: 0 $shadow-height 0 0 rgba(156, 190, 143, 0.7),
+        0 $shadow-height 0 0 #d9d9d9, 0 16px 20px rgba(10, 136, 23, 0.25);
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/products/products1_tab+mob_@2x.png);
+      }
+      @include mq(desktop) {
+        box-shadow: 0 $shadow-height 0 0 rgba(156, 190, 143, 0.7),
+          0 $shadow-height 0 0 #d9d9d9, 0 16px 20px rgba(10, 136, 23, 0.25);
+        margin: -213px 0 46px;
+        width: 302px;
+        height: 302px;
+        background-image: url(../images/products/products1_desk_@1x.png);
+        @media (min-resolution: 2dppx) {
+          background-image: url(../images/products/products1_desk_@2x.png);
+        }
+      }
+    }
+
+    &--second {
+      background: $second-cards-color;
+
+      &::before {
+        background-image: url(../images/products/products2_tab+mob_@1x.png);
+        box-shadow: 0 $shadow-height 0 0 rgba(248, 210, 78, 0.7),
+          0 $shadow-height 0 0 #d9d9d9, 0 16px 20px rgba(153, 114, 23, 0.25);
+        @media (min-resolution: 2dppx) {
+          background-image: url(../images/products/products2_tab+mob_@2x.png);
         }
         @include mq(desktop) {
-            padding: 31px 64px 56px;
-            margin: 182px 15px 60px;
-            width: calc((100% - 3 * 30px) / 3);
-            font-size: 16px;
+          background-image: url(../images/products/products2_desk_@1x.png);
+          @media (min-resolution: 2dppx) {
+            background-image: url(../images/products/products2_desk_@2x.png);
+          }
         }
-
-            &:hover {
-                box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.12), 0px 13px 13px 13px rgba(0, 0, 0, 0.12),
-                0px 13px 13px 13px rgba(0, 0, 0, 0.12);
-            }
-
-        &::before {
-            content: "";
-            display: block;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            background-image: url(../images/products/products1_tab+mob_@1x.png);
-            background-size: cover;
-            width: 200px;
-            height: 200px;
-            margin: -138px 0 31px;
-            border-radius: 50%;
-            box-shadow: 0 $shadow-height 0 0 rgba(156, 190, 143, 0.7), 0 $shadow-height 0 0 #D9D9D9, 0 16px 20px rgba(10, 136, 23, 0.25);
-            @media (min-resolution: 2dppx) {
-                background-image: url(../images/products/products1_tab+mob_@2x.png);
-            }
-            @include mq(desktop) {
-                box-shadow: 0 $shadow-height 0 0 rgba(156, 190, 143, 0.7), 0 $shadow-height 0 0 #D9D9D9, 0 16px 20px rgba(10, 136, 23, 0.25);
-                margin: -213px 0 46px;
-                width: 302px;
-                height: 302px;
-                background-image: url(../images/products/products1_desk_@1x.png);
-                @media (min-resolution: 2dppx) {
-                    background-image: url(../images/products/products1_desk_@2x.png);
-                }
-            }
-        }
-
-        &--second {
-            background: $second-cards-color;  
-
-            &::before {
-                background-image: url(../images/products/products2_tab+mob_@1x.png);
-                box-shadow: 0 $shadow-height 0 0 rgba(248, 210, 78, 0.7), 0 $shadow-height 0 0 #D9D9D9, 0 16px 20px rgba(153, 114, 23, 0.25);
-                @media (min-resolution: 2dppx) {
-                    background-image: url(../images/products/products2_tab+mob_@2x.png);
-                }
-                @include mq(desktop) {
-                    background-image: url(../images/products/products2_desk_@1x.png);
-                    @media (min-resolution: 2dppx) {
-                        background-image: url(../images/products/products2_desk_@2x.png);
-                    }
-                }
-            }
-        }
-
-        &--third {
-            background: $third-cards-color;
-
-            &::before {
-                background-image: url(../images/products/products3_tab+mob_@1x.png);
-                box-shadow: 0 $shadow-height 0 0 rgba(213, 117, 63, 0.7), 0 $shadow-height 0 0 #D9D9D9, 0 16px 20px rgba(0, 0, 0, 0.25);
-                @media (min-resolution: 2dppx) {
-                    background-image: url(../images/products/products3_tab+mob_@2x.png);
-                }
-                @include mq(desktop) {
-                    background-image: url(../images/products/products3_desk_@1x.png);
-                    @media (min-resolution: 2dppx) {
-                        background-image: url(../images/products/products3_desk_@2x.png);
-                    }
-                }
-            }
-        }    
+      }
     }
 
-    &__title {
-        margin: 0 0 40px;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        @include mq(tablet) {
-            font-size: 22px;
-            line-height: 1.23;
+    &--third {
+      background: $third-cards-color;
+
+      &::before {
+        background-image: url(../images/products/products3_tab+mob_@1x.png);
+        box-shadow: 0 $shadow-height 0 0 rgba(213, 117, 63, 0.7),
+          0 $shadow-height 0 0 #d9d9d9, 0 16px 20px rgba(0, 0, 0, 0.25);
+        @media (min-resolution: 2dppx) {
+          background-image: url(../images/products/products3_tab+mob_@2x.png);
         }
         @include mq(desktop) {
-            margin: 0 0 66px;
-            font-size: 30px;
+          background-image: url(../images/products/products3_desk_@1x.png);
+          @media (min-resolution: 2dppx) {
+            background-image: url(../images/products/products3_desk_@2x.png);
+          }
         }
+      }
     }
+  }
 
-    &__text {
-        margin-bottom: 30px;
-        @include mq(tablet) {
-            margin-bottom: 49px;
-        }
+  &__title {
+    margin: 0 0 40px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @include mq(tablet) {
+      font-size: 22px;
+      line-height: 1.23;
     }
-}   
+    @include mq(desktop) {
+      margin: 0 0 66px;
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    @include mq(tablet) {
+      margin-bottom: 49px;
+    }
+  }
+}
 
 .more {
-    fill: $primary-text-color;
-    border: none;
-    max-width: 60px;
-    margin: auto auto 0;
-    background-color: transparent;
-    cursor: pointer;
-    transition: fill 300ms $timing-function, scale 300ms $timing-function;
+  fill: $primary-text-color;
+  border: none;
+  max-width: 60px;
+  margin: auto auto 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill 300ms $timing-function, scale 300ms $timing-function;
 
-    &:hover,
-    &:focus {
-        fill: $white-text-color;
-        animation: move 1.5s infinite;
-    }
+  &:hover,
+  &:focus {
+    fill: $white-text-color;
+    animation: move 1.5s infinite;
+  }
 }
 
 @keyframes move {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(15px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -122,24 +122,21 @@
       color: #fff;
 
       .about__icon {
-      fill: $focus-color;
+        fill: $focus-color;
+      }
     }
-
-    }
-}
+  }
 
   &__icon {
-  position: absolute;
-  left: 70%;
-  transform: translate(50%, 25%);
+    position: absolute;
+    left: 70%;
+    transform: translate(50%, 25%);
 
     &:focus {
       fill: $focus-color;
     }
   }
 }
-
-
 
 .text-wrapper {
   @include mq(phone-only) {
@@ -148,7 +145,6 @@
   }
 }
 
-
 .image-box {
   margin-left: auto;
   margin-right: auto;
@@ -156,43 +152,43 @@
   z-index: 99;
 
   &::before {
-  content: '';
-  display: block;
-  width: 279px;
-  height: 278px;
-  border-radius: 50%;
-  left: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $second-cards-color;
-  background-size: cover;
-  box-shadow: 0 -22px 0 0 $second-cards-color;
-  background-image: url(../images/cow/cow_mob_1x.png);
-  @media (min-resolution: 2dppx) {
-  background-image: url(../images/cow/cow_mob_2x.png);
-  }
+    content: '';
+    display: block;
+    width: 279px;
+    height: 278px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $second-cards-color;
+    background-size: cover;
+    box-shadow: 0 -22px 0 0 $second-cards-color;
+    background-image: url(../images/cow/cow_mob_1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/cow/cow_mob_2x.png);
+    }
     &:hover {
-      box-shadow: 15px 15px 15px 15px rgba(156, 190, 143, 0.7), 15px 15px 15px 15px #D9D9D9, 15 16px 20px rgba(10, 136, 23, 0.25);
-      
+      box-shadow: 15px 15px 15px 15px rgba(156, 190, 143, 0.7),
+        15px 15px 15px 15px #d9d9d9, 15 16px 20px rgba(10, 136, 23, 0.25);
     }
 
-  @include mq(tablet) {
-    width: 330px;
-    height: 330px;
-    box-shadow: 0 -26px 0 0 $second-cards-color;
-    background-image: url(../images/cow/cow_tab_1x.png);
-    @media (min-resolution: 2dppx) {
-      background-image: url(../images/cow/cow_tab_2x.png);
+    @include mq(tablet) {
+      width: 330px;
+      height: 330px;
+      box-shadow: 0 -26px 0 0 $second-cards-color;
+      background-image: url(../images/cow/cow_tab_1x.png);
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/cow/cow_tab_2x.png);
+      }
     }
-  }
-  @include mq(desktop) {
-    width: 490px;
-    height: 490px;
-    box-shadow: 0 -40px 0 0 $second-cards-color;
-    background-image: url(../images/cow/cow_desk_1x.png);
-    @media (min-resolution: 2dppx) {
-      background-image: url(../images/cow/cow_desk_2x.png);
+    @include mq(desktop) {
+      width: 490px;
+      height: 490px;
+      box-shadow: 0 -40px 0 0 $second-cards-color;
+      background-image: url(../images/cow/cow_desk_1x.png);
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/cow/cow_desk_2x.png);
+      }
     }
-  }
   }
 }
