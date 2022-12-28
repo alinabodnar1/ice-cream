@@ -9,7 +9,7 @@
   }
 
   @include mq(tablet) {
-     padding-bottom: 12px;
+    padding-bottom: 12px;
     max-width: 768px;
   }
 
@@ -32,16 +32,16 @@
     line-height: 1.26;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  
+
     color: $white-text-color;
-  
+
     &--big {
       font-size: 33px;
       @include mq(desktop) {
         font-size: inherit;
       }
     }
-  
+
     @include mq(desktop) {
       font-size: 38px;
       max-width: 367px;
@@ -55,20 +55,20 @@
     justify-content: left;
     align-items: center;
     margin-top: 32px;
-  
+
     @include mq(tablet) {
       margin-top: 24px;
     }
-  
+
     @include mq(desktop) {
       margin-top: 28px;
     }
   }
-  
+
   &__products-btn {
     margin-right: 12px;
     padding: 11px 26px;
-  
+
     border: 2px solid $accent-color;
     border-radius: 10px;
     font-size: 12px;
@@ -76,7 +76,10 @@
     line-height: 1.25;
     text-decoration: none;
     color: $primary-text-color;
-  
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
     @include mq(desktop) {
       margin-right: 34px;
       padding: 12px 34px;
@@ -85,10 +88,16 @@
     &:hover {
       border-color: $hover-color;
       text-decoration: none;
+      transform: scale(1.05) translateY(-0.2rem);
+      box-shadow: 0 4px 4px #0000001a, 0 1px 6px #0000000d, 0 8px 8px #0000001a,
+        0 16px 16px #0000001a, 8px 32px 32px #00000026;
     }
     &:focus {
       color: $focus-color;
       border-color: $hover-color;
+      transform: scale(1.05) translateY(-0.2rem);
+      box-shadow: 0 4px 4px #0000001a, 0 1px 6px #0000000d, 0 8px 8px #0000001a,
+        0 16px 16px #0000001a, 8px 32px 32px #00000026;
     }
     &:disabled {
       color: $disabled-color;
@@ -117,7 +126,7 @@
     z-index: 1;
     bottom: 0;
     left: 83px;
-  
+
     @include mq(tablet) {
       // right: 92px;
       left: 408px;
@@ -136,93 +145,114 @@
   }
 
   &__hat-img {
-        display: block;
-        position: absolute;
-        z-index: 100;
-        transform: rotate(-15deg);
-        bottom: 95px;
-        left: 65px;
-        width: 100px;
-        animation: rotate-diagonal-1 0.4s linear both;
-        @keyframes rotate-diagonal-1 {
-          0% {
-            -webkit-transform: rotate3d(1, 1, 0, 0deg);
-                    transform: rotate3d(1, 1, 0, 0deg);
-          }
-          50% {
-            -webkit-transform: rotate3d(1, 1, 0, -180deg);
-                    transform: rotate3d(1, 1, 0, -180deg);
-          }
-          100% {
-            -webkit-transform: rotate3d(1, 1, 0, -360deg);
-                    transform: rotate3d(1, 1, 0, -360deg);
-          }
-        }
-
-      @include mq(tablet) {
-        bottom: 140px;
-        left: 365px;
-        width: 170px;
-      }
-  
-      @include mq(desktop) {
-        transform: rotate(-10deg);
-        bottom: 265px;
-        left: 610px;
-        width: 250px;
-      }
-    }
-
-    &__snow-img--top {
-      display: block;
-      position: absolute;
-      z-index: 90;
-      bottom: 150px;
-      left: 250px;
-      width: 70px;
-      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-      @include mq(tablet) {
-        bottom: 280px;
-        left: 300px;
-        width: 100px; 
-      }
-      @include mq(desktop) {
-        bottom: 380px;
-        left: 470px;
-        width: 140px; 
-      }
-    }
-    &__snow-img--bottom {
-      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-      display: block;
-      position: absolute;
-      z-index: 90;
-      bottom: 60px;
-      left: 0;
-      width: 70px;
-      @include mq(tablet) {
-        bottom: 80px;
-        left: 670px;
-        width: 80px;
-      }
-      @include mq(desktop) {
-        bottom: 100px;
-        left: 1070px;
-        width: 120px;
-      }
-    }
-    @keyframes scale-up-center {
+    display: block;
+    position: absolute;
+    z-index: 95;
+    transform: rotate(-15deg);
+    bottom: 95px;
+    left: 65px;
+    width: 100px;
+    animation: rotate-diagonal-1 0.4s linear both;
+    @keyframes rotate-diagonal-1 {
       0% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
+        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+        transform: rotate3d(1, 1, 0, 0deg);
+      }
+      50% {
+        -webkit-transform: rotate3d(1, 1, 0, -180deg);
+        transform: rotate3d(1, 1, 0, -180deg);
       }
       100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        -webkit-transform: rotate3d(1, 1, 0, -360deg);
+        transform: rotate3d(1, 1, 0, -360deg);
       }
     }
 
+    @include mq(tablet) {
+      bottom: 140px;
+      left: 365px;
+      width: 170px;
+    }
+
+    @include mq(desktop) {
+      transform: rotate(-10deg);
+      bottom: 265px;
+      left: 610px;
+      width: 250px;
+    }
   }
+
+  &__snow-img--top {
+    display: block;
+    position: absolute;
+    z-index: 90;
+    bottom: 150px;
+    left: 250px;
+    width: 70px;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    @include mq(tablet) {
+      bottom: 280px;
+      left: 300px;
+      width: 100px;
+    }
+    @include mq(desktop) {
+      bottom: 380px;
+      left: 470px;
+      width: 140px;
+    }
+  }
+  &__snow-img--bottom {
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    display: block;
+    position: absolute;
+    z-index: 90;
+    bottom: 60px;
+    left: 0;
+    width: 70px;
+    @include mq(tablet) {
+      bottom: 80px;
+      left: 670px;
+      width: 80px;
+    }
+    @include mq(desktop) {
+      bottom: 100px;
+      left: 1070px;
+      width: 120px;
+    }
+  }
+
+  .hero__branch-img {
+    display: block;
+    position: absolute;
+    z-index: 90;
+    bottom: 410px;
+    left: 20;
+    width: 200px;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+    @include mq(tablet) {
+      bottom: 340px;
+      left: 30;
+      width: 240px;
+    }
+    @include mq(desktop) {
+      bottom: 540px;
+      left: 40;
+      width: 270px;
+    }
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
 
 .invite {
   position: relative;
@@ -245,7 +275,7 @@
     @include mq(tablet) {
       margin-right: 32px;
     }
-  
+
     @include mq(desktop) {
       margin-right: 16px;
     }
@@ -254,16 +284,15 @@
   @keyframes roll-in-left {
     0% {
       -webkit-transform: translateX(-800px) rotate(-540deg);
-              transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
       opacity: 0;
     }
     100% {
       -webkit-transform: translateX(0) rotate(0deg);
-              transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
       opacity: 1;
     }
   }
-  
 
   &__description {
     position: relative;
@@ -296,7 +325,7 @@
       color: $white-text-color;
       fill: $white-text-color;
     }
-  
+
     @include mq(desktop) {
       margin-top: 24px;
     }
@@ -325,7 +354,7 @@
         color: $primary-text-color;
       }
     }
-  
+
     @include mq(desktop) {
       margin-top: 8px;
       font-size: 14px;
