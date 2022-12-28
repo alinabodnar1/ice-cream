@@ -14,23 +14,24 @@
     width: 1013px;
     height: 422px;
     overflow: hidden;
-    border-radius: 18px;
+    border-radius: 24px;
     margin-bottom: -98px;
     transform: translateY(-98px);
     background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: changeImages 20s linear infinite normal;
+    animation: changeImages 20s linear 3s infinite alternate;
   }
 
   &__wrap {
-    border-radius: 18px;
+    border-radius: 8px;
     transform: translateY(-32px);
     overflow: hidden;
 
     @include mq(tablet) {
       transform: translateY(-144px);
+      border-radius: 18px;
     }
 
     @include mq(desktop) {
@@ -48,6 +49,7 @@
 @keyframes changeImages {
   0% {
     background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
