@@ -90,6 +90,7 @@
         font-size: 14px;
         line-height: 1.76;
         letter-spacing: 0.04em;
+        transition: box-shadow 300ms $timing-function;
         @include mq(tablet) {
             padding: 31px 26px 7px;
             margin: 107px 8px 60px;
@@ -101,6 +102,11 @@
             width: calc((100% - 3 * 30px) / 3);
             font-size: 16px;
         }
+
+            &:hover {
+                box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.12), 0px 13px 13px 13px rgba(0, 0, 0, 0.12),
+                0px 13px 13px 13px rgba(0, 0, 0, 0.12);
+            }
 
         &::before {
             content: "";
@@ -135,7 +141,7 @@
 
             &::before {
                 background-image: url(../images/products/products2_tab+mob_@1x.png);
-                box-shadow: 0 $shadow-height 0 0 rgba(248, 210, 78, 0.7), 0 $shadow-height 0 0 #D9D9D9, 0 16px 20px rgba(153, 114, 23, 0.25);;
+                box-shadow: 0 $shadow-height 0 0 rgba(248, 210, 78, 0.7), 0 $shadow-height 0 0 #D9D9D9, 0 16px 20px rgba(153, 114, 23, 0.25);
                 @media (min-resolution: 2dppx) {
                     background-image: url(../images/products/products2_tab+mob_@2x.png);
                 }
