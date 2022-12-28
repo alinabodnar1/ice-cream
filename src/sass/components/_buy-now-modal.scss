@@ -9,7 +9,8 @@
     opacity: 1;
     z-index: 10;
     overflow: scroll;
-    transition: opacity 300ms $timing-function;
+    transition: opacity 300ms $timing-function,
+    opacity 300ms $timing-function;
     // &.is-hidden {
     //     opacity: 0;
     //     pointer-events: none;
@@ -89,6 +90,7 @@
     }
 
     &__item {
+        display: block;
         margin-top: 90px;
         margin-left: auto;
         margin-right: auto;
@@ -115,8 +117,9 @@
     }
 
     &__ellipse {
+        display: block;
         margin-top: -50%;
-        margin-left: -2px;
+        margin-left: -1px;
         width: 130px;
         height: 130px;
         background-color: $decor-elements-color;
@@ -136,10 +139,12 @@
     }
 
     &__png {
+        display: block;
         margin-top: -134px;
     }
     
     &__product {
+        display: block;
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 16px;
