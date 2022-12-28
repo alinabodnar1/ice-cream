@@ -1,20 +1,21 @@
-<div class="about__backdrop is-hidden" data-modal id="about-modal">
+<div class="backdrop is-hidden" data-modal id="about-modal">
   <div class="modal about__modal">
-    <button type="button" class="about__close-button" data-modal-close>
-      <svg class="about__close" width="11" height="11">
+    <button type="button" id="stop" class="about__close-button modal__close" data-modal-close>
+      <svg class="about__close" width="11" height="11" id="stop">
         <use href="./images/sprite.svg#close"></use>
       </svg>
     </button>
     <h3 class="about__title">How it&#39;s made?</h3>
     <div class="about__wrapper">
       <iframe
-        src="https://www.youtube.com/embed/7gJIyHnD710"
+        src="https://www.youtube.com/embed/7gJIyHnD710?enablejsapi=1"
+        id="my-video"
         width="448"
         height="260"
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer nofollow"
-        class="location__map"
+        class="about__video"
       ></iframe>
     </div>
     <p class="about__subject">
@@ -24,3 +25,9 @@
     </p>
   </div>
 </div>
+
+<script>
+  document.querySelector('#stop').addEventListener('click', () => {
+      document.querySelector('#my-video').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
+</script>
