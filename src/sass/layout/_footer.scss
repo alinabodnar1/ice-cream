@@ -141,14 +141,14 @@
       gap: 30px;
     }
   }
-
-  &__icon {
-    fill: $primary-bg-color;
-
-    &:hover,
-    &:focus {
+  &__link {
+    &:hover .join__icon,
+    &:focus .join__icon {
       fill: $white-text-color;
     }
+  }
+  &__icon {
+    fill: $primary-bg-color;
   }
 }
 
