@@ -11,16 +11,6 @@
     font-size: 16px;
   }
 
-  &__container {
-    padding-bottom: 60px;
-    @include mq(tablet) {
-      padding-bottom: 40px;
-    }
-    @include mq(desktop) {
-      padding-bottom: 120px;
-    }
-  }
-
   &__lists {
     margin-bottom: -331px;
     transform: translateY(-353px);
@@ -108,7 +98,7 @@
     background-color: $focus-color;
     border-radius: 24px;
     padding: 42px 32px 22px 32px;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    box-shadow: $shadow;
     @include mq(phone-only) {
       &:not(:last-child) {
         margin-bottom: 16px;
@@ -137,6 +127,7 @@
     &:hover,
     &:focus {
       text-decoration: underline;
+      text-shadow: $shadow;
     }
     @include mq(tablet) {
       width: 170px;
@@ -152,6 +143,7 @@
     &:hover,
     &:focus {
       text-decoration: underline;
+      text-shadow: $shadow;
     }
     @include mq(tablet) {
       line-height: 1.5;
