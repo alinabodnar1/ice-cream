@@ -1,15 +1,15 @@
 .footer {
   background-color: $primary-bg-color;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 20px;
 
   @include mq(tablet) {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 12px;
   }
 
   @include mq(desktop) {
-    padding-top: 120px;
+    padding-top: 110px;
   }
 
   &__line {
