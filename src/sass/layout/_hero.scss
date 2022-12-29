@@ -128,11 +128,9 @@
     left: 83px;
 
     @include mq(tablet) {
-      // right: 92px;
       left: 408px;
     }
     @include mq(desktop) {
-      // right: 92px;
       left: 652px;
     }
   }

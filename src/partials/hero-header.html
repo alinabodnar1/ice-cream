@@ -5,20 +5,33 @@
         <picture class="header__logo">
           <source
             media="(min-width: 1200px)"
-            srcset="/src/images/header-hero/logo-lg@1x.png 1x, /src/images/header-hero/logo-lg@2x.png 2x"
+            srcset="
+              /src/images/header-hero/logo-lg@1x.png 1x,
+              /src/images/header-hero/logo-lg@2x.png 2x
+            "
             type="image/png"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/src/images/header-hero/logo-md@1x.png 1x, /src/images/header-hero/logo-md@2x.png 2x"
+            srcset="
+              /src/images/header-hero/logo-md@1x.png 1x,
+              /src/images/header-hero/logo-md@2x.png 2x
+            "
             type="image/png"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/src/images/header-hero/logo-sm@1x.png 1x, /src/images/header-hero/logo-sm@2x.png 2x"
+            srcset="
+              /src/images/header-hero/logo-sm@1x.png 1x,
+              /src/images/header-hero/logo-sm@2x.png 2x
+            "
             type="image/png"
           />
-          <img src="/src/images/header-hero/logo-sm@1x.png" alt="Site logo" loading="lazy" />
+          <img
+            src="/src/images/header-hero/logo-sm@1x.png"
+            alt="Site logo"
+            loading="lazy"
+          />
         </picture>
       </a>
       <nav class="site-nav">
@@ -68,21 +81,28 @@
 
   <!-- Mobile menu -->
   <div class="mobile-menu__container js-menu-container" id="mobile-menu">
-    <!-- <svg class="mobile-menu__logo" width="40" height="37">
-      <use href="/src/images/sprite.svg#logo"></use>
-    </svg> -->
     <picture class="mobile-menu__logo">
       <source
         media="(min-width: 768px)"
-        srcset="/src/images/header-hero/logo-md@1x.png 1x, /src/images/header-hero/logo-md@2x.png 2x"
+        srcset="
+          /src/images/header-hero/logo-md@1x.png 1x,
+          /src/images/header-hero/logo-md@2x.png 2x
+        "
         type="image/png"
       />
       <source
         media="(max-width: 767px)"
-        srcset="/src/images/header-hero/logo-sm@1x.png 1x, /src/images/header-hero/logo-sm@2x.png 2x"
+        srcset="
+          /src/images/header-hero/logo-sm@1x.png 1x,
+          /src/images/header-hero/logo-sm@2x.png 2x
+        "
         type="image/png"
       />
-      <img src="/src/images/header-hero/logo-sm@1x.png" alt="Site logo" loading="lazy" />
+      <img
+        src="/src/images/header-hero/logo-sm@1x.png"
+        alt="Site logo"
+        loading="lazy"
+      />
     </picture>
 
     <button class="mobile-menu__toggle js-close-menu">
@@ -106,7 +126,11 @@
       </li>
     </ul>
     <div class="mobile-menu__btn">
-      <button class="main-buttons__buy main-buttons__buy--modal btn" data-modal-open="modal-buy" type="button">
+      <button
+        class="main-buttons__buy main-buttons__buy--modal btn"
+        data-modal-open="modal-buy"
+        type="button"
+      >
         Buy now
         <svg class="main-buttons__arrow-icon" width="12" height="12">
           <use href="/src/images/sprite.svg#arrow-right"></use>
@@ -165,13 +189,16 @@
       <ul class="numbers list">
         <li class="numbers__item">
           <p class="numbers__description">
-            <span class="numbers__description--accent" id="first-number">16</span><br />cafes
+            <span class="numbers__description--accent" id="first-number"
+              >16</span
+            ><br />cafes
           </p>
         </li>
         <li class="numbers__item">
           <p class="numbers__description">
-            <span class="numbers__description--accent" id="second-number">23</span><br />food
-            trucks
+            <span class="numbers__description--accent" id="second-number"
+              >23</span
+            ><br />food trucks
           </p>
         </li>
       </ul>
@@ -237,10 +264,26 @@
         />
       </picture>
 
-      <img class="hero__hat-img" src="/src/images/header-hero/hat.png" alt="Christmas hat">
-      <img class="hero__snow-img--top" src="/src/images/header-hero/snow.png" alt="Snow">
-      <img class="hero__snow-img--bottom" src="/src/images/header-hero/snow.png" alt="Snow">
-      <img class="hero__branch-img" src="/src/images/header-hero/branch.png" alt="Christmas tree branch">
+      <img
+        class="hero__hat-img"
+        src="/src/images/header-hero/hat.png"
+        alt="Christmas hat"
+      />
+      <img
+        class="hero__snow-img--top"
+        src="/src/images/header-hero/snow.png"
+        alt="Snow"
+      />
+      <img
+        class="hero__snow-img--bottom"
+        src="/src/images/header-hero/snow.png"
+        alt="Snow"
+      />
+      <img
+        class="hero__branch-img"
+        src="/src/images/header-hero/branch.png"
+        alt="Christmas tree branch"
+      />
     </div>
   </section>
 </div>
