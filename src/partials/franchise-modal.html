@@ -1,35 +1,67 @@
 <div class="backdrop is-hidden" data-modal id="franchise-modal">
-    <div class="modal franchise-modal">
-        <button class="modal__close" data-modal-close>
-            <svg class="modal__close-icon">
-                <use href="./images/sprite.svg#close"></use>
-            </svg>
-        </button>
-        <h3 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h3>
-        <p class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new
-            franchisee applications at this time. Once
-            the application process resumes, we will contact you for further information. Please fill out the contact
-            information
-            below and we will reach out for additional information. We appreciate your patience.</p>
-        <form class="form franchise-form">
-            <fieldset class="form__field">
-                <div class="form__group">
-                    <input class="form__input" type="text" name="user-name" placeholder="Name" minlength="3"
-                        maxlength="30" title="Enter your name" pattern="[A-Za-z]+" required>
-                </div>
-                <div class="form__group">
-                    <input class="form__input" type="tel" name="tel" placeholder="Phone" title="for example: 0961234567"
-                        pattern="[0-9]{10}" required>
-                </div>
-                <div class="form__group">
-                    <input class="form__input" type="email" name="email" placeholder="Email" title="Enter your em@il"
-                        pattern="[^ @]*@[^ @]*" required>
-                </div>
-                <div class="form__group">
-                    <textarea class="form__coment" name="coment" rows="3" placeholder="Comment"></textarea>
-                </div>
-            </fieldset>
-            <button class="btn form__button" type="submit">Submit</button>
-        </form>
-    </div>
+  <div class="modal franchise-modal">
+    <button class="modal__close" data-modal-close>
+      <svg class="modal__close-icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h3>
+    <p class="modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="form franchise-form">
+      <fieldset class="form__field">
+        <div class="form__group">
+          <input
+            class="form__input"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+            minlength="3"
+            maxlength="30"
+            title="Enter your name"
+            pattern="[A-Za-z]+"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <input
+            class="form__input"
+            type="tel"
+            name="tel"
+            placeholder="Phone"
+            title="for example: 0961234567"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            title="Enter your em@il"
+            pattern="[^ @]*@[^ @]*"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <textarea
+            class="form__coment"
+            name="coment"
+            rows="3"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+      </fieldset>
+      <button class="btn form__button" type="submit">Submit</button>
+    </form>
+  </div>
 </div>

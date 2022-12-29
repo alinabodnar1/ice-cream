@@ -91,6 +91,7 @@
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
+    box-shadow: $shadow;
     transition: box-shadow 300ms $timing-function;
     @include mq(tablet) {
       padding: 31px 26px 7px;
@@ -210,7 +211,7 @@
   margin: auto auto 0;
   background-color: transparent;
   cursor: pointer;
-  transition: fill 300ms $timing-function, scale 300ms $timing-function;
+  transition: fill 300ms $timing-function;
 
   &:hover,
   &:focus {
