@@ -12,6 +12,64 @@
     padding-top: 110px;
   }
 
+&__branch {
+  position: relative;
+}
+
+&__branch-img {
+  display: block;
+  position: absolute;
+  left: -20px;
+  width: 110px;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  @include mq(tablet) {
+    top: -40px;
+    left: 250px;
+    width: 200px;
+  }
+
+  @include mq(desktop) {
+    top: -55px;
+    left: 480px;
+    width: 350px;
+  }
+}
+&__branch-img--second{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 80px;
+  width: 110px;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  
+  @include mq(tablet) {
+      display: none;
+    }
+}
+&__branch-img--third {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 183px;
+  width: 110px;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  @include mq(tablet) {
+    display: none;
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
   &__line {
     margin-top: 40px;
     margin-bottom: 20px;
