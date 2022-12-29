@@ -141,12 +141,12 @@
   }
 
   &__compound {
-    text-align: start;
+    text-align: left;
     width: 60%;
   }
 
   &__value {
-    text-align: end;
+    text-align: right;
     margin-bottom: 12px;
     width: 23%;
     @include mq(tablet) {
