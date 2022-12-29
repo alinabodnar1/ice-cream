@@ -1,4 +1,4 @@
-//Брейкпоінти 
+//Брейкпоінти
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
@@ -18,7 +18,7 @@ $third-cards-color: #d6936d;
 // колір акцентів, кнопок, бордерів кнопок, підложки іконок соцмереж
 $accent-color: #f8d24e;
 
-// колір декоративного елементу - кола в секціі продукти, 
+// колір декоративного елементу - кола в секціі продукти,
 // колір круглих елементів в модальних вікнах about product, buy now
 $decor-elements-color: #9cbe8f;
 
@@ -41,7 +41,7 @@ $gray-text-color: #ababab;
 $copyright-color: #7a7a7a;
 
 // колір тексту при фокусі
-$focus-color: #FFFFFF;
+$focus-color: #ffffff;
 
 // колір бордеру в контактах
 $border-color: #e1e1e1;
@@ -56,3 +56,6 @@ $secondary-fon: 'Seymour One', sans-serif;
 $transition-duration: 300ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $transition-timing-function: $timing-function;
+
+//тінь
+$shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
