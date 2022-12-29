@@ -18,8 +18,7 @@
     margin-bottom: -98px;
     transform: translateY(-98px);
     background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,8 +27,7 @@
 
   &__wrap {
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     transform: translateY(-32px);
     overflow: hidden;
 
@@ -53,8 +51,7 @@
 @keyframes changeImages {
   0% {
     background-image: url(/src/images/gallery/gallery1_desk_@1x.jpg);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,8 +59,7 @@
 
   25% {
     background-image: url(/src/images/gallery/gallery5_desk_@1x.jpg);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,8 +67,7 @@
 
   50% {
     background-image: url(/src/images/gallery/gallery3_desk_@1x.jpg);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,8 +75,7 @@
 
   75% {
     background-image: url(/src/images/gallery/gallery2_desk_@1x.jpg);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,8 +83,7 @@
 
   100% {
     background-image: url(/src/images/gallery/gallery4_desk_@1x.jpg);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: $shadow;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
